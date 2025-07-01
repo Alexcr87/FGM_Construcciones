@@ -1,5 +1,6 @@
 
 import Products from "@/components/products/Products";
+import TextSlider from "@/components/textSlider/TextSlider";
 import Work from "@/components/works/Work";
 
 export const categorias = [
@@ -41,6 +42,7 @@ export const categorias = [
 export default function Home() {
   return (
     <div >
+     <TextSlider/>
      <Products categorias={categorias}/>
      <Work/>
     </div>

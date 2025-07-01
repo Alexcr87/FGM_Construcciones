@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import typeOrmConfig from './config/typeOrm';
-import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
@@ -35,7 +34,7 @@ import { CategoryModule } from './module/category/category.module';
       secret: process.env.JWT_SECRET,
     }),
   ],
-  controllers: [AppController],
+  controllers: [],
   providers: [AppService, CloudinaryConfig],
 })
 export class AppModule {}

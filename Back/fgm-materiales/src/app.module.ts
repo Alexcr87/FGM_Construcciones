@@ -8,6 +8,7 @@ import { ProductModule } from './module/product/product.module';
 import { FilesModule } from './module/files/files.module';
 import { CloudinaryConfig } from './config/cloudinary.config';
 import { JwtModule } from '@nestjs/jwt';
+import { CategoryModule } from './module/category/category.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { JwtModule } from '@nestjs/jwt';
     }),
     ProductModule,
     FilesModule,
+    CategoryModule,
     JwtModule.register({
       global: true,
       signOptions: { expiresIn: '1h' },

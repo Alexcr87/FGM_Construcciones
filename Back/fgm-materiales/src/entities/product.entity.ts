@@ -4,10 +4,8 @@ import {
   Entity,
   JoinTable,
   ManyToMany,
-  OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Review } from './reviews.entity';
 import { Category } from './category.entity';
 
 @Entity()
@@ -21,11 +19,8 @@ export class Product {
   @Column()
   description: string;
 
-  @Column('decimal')
-  price: number;
-
   @Column()
-  img_url: string;
+  img: string;
 
   @Column({ default: true })
   is_active: boolean;
@@ -36,7 +31,4 @@ export class Product {
   @ManyToMany(() => Category, (category) => category.products)
   @JoinTable({ name: 'product_category' })
   categories: Category[];
-
-  @OneToMany(() => Review, (review) => review.product)
-  reviews: Review[];
 }

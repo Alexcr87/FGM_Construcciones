@@ -34,6 +34,40 @@ export class createProductDto {
   @ApiProperty()
   img: string;
 
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(3)
+  @MaxLength(50)
+  @ApiProperty({
+    description: 'dimenciones en centimetros del producto ',
+  })
+  dimencion: string;
+
+  @IsOptional()
+  @IsString()
+  @ApiProperty({
+    description: 'superficie del producto, por ejemplo: pared, piso, etc',
+  })
+  surface?: string;
+
+  @IsOptional()
+  @IsString()
+  @ApiProperty({
+    description:
+      'cantidad de metros cuadrados que cubre el producto, por ejemplo: 2.02m2',
+  })
+  box?: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(3)
+  @MaxLength(50)
+  @ApiProperty({
+    description:
+      'tipo de material del producto, por ejemplo: pulido, brillante, etc',
+  })
+  material: string;
+
   @IsOptional()
   @IsArray()
   @ArrayNotEmpty()

@@ -9,10 +9,12 @@ interface IProps {
 
 export const DetailPro: React.FC<IProps> = ({ products }) => {
 
+   
+    
 
     return (
         <div>
-            {products.map((products: IProduct) => (<RenderDetail key={products.id} products={products} />))}
+         {products.map((products: IProduct) => (<RenderDetail key={products.id} products={products} />))}
         </div>
     )
 

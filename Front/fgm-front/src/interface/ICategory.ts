@@ -1,3 +1,4 @@
+import { UUID } from "crypto"
 
 export interface ICategory {
     id: string,
@@ -10,7 +11,7 @@ export interface ICategory {
 
 
 export interface IProduct {
-    id: number,
+    id: string,
     name: string,
     description: string,
     img: string,

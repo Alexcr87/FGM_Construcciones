@@ -4,7 +4,7 @@ import { getCategoriasId } from "@/helper/categorias";
 
 
 interface IProp {
-    params: { id: string }
+    params: { id:string }
 }
 
 export const Category: React.FC<IProp> = async ({ params }) => {
@@ -12,11 +12,7 @@ export const Category: React.FC<IProp> = async ({ params }) => {
     
     const id = params.id
     const products = await getCategoriasId(id)
-    console.log("esto envio", params.id);
-    
-console.log(`ESTO ME DA EL BACK` , products);
-
-
+    console.log(`ESTO ME DA EL BACK`, products);
 
     return (
         <div>

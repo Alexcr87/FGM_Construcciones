@@ -9,8 +9,6 @@ interface IProps {
 
 export const DetailPro: React.FC<IProps> = ({ products }) => {
 
-   
-    
 
     return (
         <div>

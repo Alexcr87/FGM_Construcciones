@@ -16,7 +16,6 @@ export const getCategoriasId = async (id: string) => {
 
     try {
         const response = await fetch(`http://localhost:4000/category/${id}`)
-
         const data = await response.json()
         return data
     } catch (error) {

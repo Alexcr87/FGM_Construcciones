@@ -10,11 +10,14 @@ export interface ICategory {
 
 
 export interface IProduct {
-    id: string,
+    id: number,
     name: string,
     description: string,
     img: string,
+    dimension:string,
+    material:string,
+    box:String
     is_active?: Boolean,
-    creation: Date,
-    categories: ICategory[]
+    creation?: Date,
+    categories?: ICategory[]
 }

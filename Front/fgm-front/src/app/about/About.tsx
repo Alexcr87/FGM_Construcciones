@@ -1,12 +1,12 @@
 import React from "react";
-
+import AboutRender from "@/components/About/AboutRender";
 
 
 export const About = ()=>{
 
 return(
 <div>
-    <img src="/fotoim.png" alt="" />
+   <AboutRender/>
 </div>
 )
 

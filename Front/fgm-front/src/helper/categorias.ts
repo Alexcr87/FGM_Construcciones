@@ -1,10 +1,28 @@
-export const getCategorias = async()=>{
-try {
-    const response = await fetch(`http://localhost:4000/category`)
-    const data = await response.json()   
-    return data
-    
-} catch (error) {
-    console.log(`Error` , error); 
+export const getCategorias = async () => {
+    try {
+        const response = await fetch(`http://localhost:4000/category`)
+
+        const data = await response.json()
+        return data
+
+    } catch (error) {
+        console.log(`Error`, error);
+    }
 }
+
+
+
+export const getCategoriasId = async (id: string) => {
+
+    try {
+        const response = await fetch(`http://localhost:4000/category/${id}`)
+
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.log(`Error`, error);
+
+    }
+
+
 }

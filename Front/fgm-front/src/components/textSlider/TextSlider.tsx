@@ -3,6 +3,7 @@ import React from "react";
 const sliderItems = [
   "Agendá tu visita y conocé nuestro showroom",
   "Teléfono: +54 351 546 5700",
+  "Atención personalizada",
   "Dirección: Ramón Cárcano 120, X5003HGO Córdoba"
 ];
 

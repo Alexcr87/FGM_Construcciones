@@ -28,6 +28,7 @@ export class ProductController {
   @Get(':id')
   @HttpCode(200)
   getProductById(@Param('id', ParseUUIDPipe) id: string) {
+    console.log(`ID recibido en el controlador: ${id}`);
     return this.productService.getProductByid(id);
   }
 

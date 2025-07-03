@@ -11,8 +11,8 @@ export const Category: React.FC<IProp> = async ({ params }) => {
     console.log(params, "esto es params");
     
     const id = params.id
-    const products = await getCategoriasId(id)
-    console.log(`ESTO ME DA EL BACK`, products);
+    const categoria= await getCategoriasId(id)
+    const products = categoria.products ?? [];
 
     return (
         <div>

@@ -1,6 +1,7 @@
 import DetailPro from "@/components/detailProduct/DetailPro";
 import React from "react";
 import { getCategoriasId } from "@/helper/categorias";
+import Navbar from "@/components/navbar/NavBar";
 
 
 interface IProp {
@@ -8,7 +9,7 @@ interface IProp {
 }
 
 export const Category: React.FC<IProp> = async ({ params }) => {
-    console.log(params, "esto es params");
+  
     
     const id = params.id
     const categoria= await getCategoriasId(id)
@@ -17,6 +18,7 @@ export const Category: React.FC<IProp> = async ({ params }) => {
     return (
         <div>
             <DetailPro products={products} />
+     
         </div>
     )
 

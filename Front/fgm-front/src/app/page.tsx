@@ -13,6 +13,8 @@ export default async function Home() {
 
   const categorias = await getCategorias()
 
+
+
   return (
     <div>
       <TextSlider />

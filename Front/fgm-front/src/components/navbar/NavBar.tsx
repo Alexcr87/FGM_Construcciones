@@ -2,9 +2,17 @@
 
 import { IoSearchSharp } from "react-icons/io5";
 import Link from "next/link";
+import { ICategory } from "@/interface/ICategory";
 import { useState } from "react";
 
-export default function Navbar() {
+interface ICategorias {
+  categorias: ICategory[]
+}
+
+
+
+export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false);
@@ -29,21 +37,15 @@ export default function Navbar() {
             </button>
             {isDesktopDropdownOpen && (
               <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-md rounded-md z-50 min-w-[220px]">
-                <Link href="/categorias/porcelanatos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Porcelanatos y porcelánicos
-                </Link>
-                <Link href="/categorias/pisos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Pisos y revestimientos
-                </Link>
-                <Link href="/categorias/pvc" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Placas PVC
-                </Link>
-                <Link href="/categorias/banos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Baños y sanitarios
-                </Link>
-                <Link href="/categorias/decoracion" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Decoración interiores
-                </Link>
+                {categorias.map(cat => (
+                  <Link
+                    key={cat.id}
+                    href={`/categorias/${cat.id}`}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    {cat.name}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
@@ -52,7 +54,6 @@ export default function Navbar() {
           <Link href="/about">ABOUT</Link>
         </div>
 
-  
         <div className="hidden md:flex items-center border border-gray-400 rounded-full px-4 py-2 gap-2 w-72">
           <input
             type="text"
@@ -86,21 +87,15 @@ export default function Navbar() {
             </button>
             {isDropdownOpen && (
               <div className="mt-1 pl-3 space-y-1">
-                <Link href="/categorias/porcelanatos" className="block text-sm text-gray-600">
-                  Porcelanatos y porcelánicos
-                </Link>
-                <Link href="/categorias/pisos" className="block text-sm text-gray-600">
-                  Pisos y revestimientos
-                </Link>
-                <Link href="/categorias/pvc" className="block text-sm text-gray-600">
-                  Placas PVC
-                </Link>
-                <Link href="/categorias/banos" className="block text-sm text-gray-600">
-                  Baños y sanitarios
-                </Link>
-                <Link href="/categorias/decoracion" className="block text-sm text-gray-600">
-                  Decoración interiores
-                </Link>
+                {categorias.map(cat => (
+                  <Link
+                    key={cat.id}
+                    href={`/categorias/${cat.id}`}
+                    className="block text-sm text-gray-600"
+                  >
+                    {cat.name}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
@@ -111,4 +106,4 @@ export default function Navbar() {
       )}
     </nav>
   );
-}
+};

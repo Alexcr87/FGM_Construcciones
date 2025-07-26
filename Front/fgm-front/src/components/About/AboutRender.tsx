@@ -11,90 +11,58 @@ export const AboutRender: React.FC = () => {
   ];
 
   return (
-    <section
-      style={{
-        backgroundColor: "#fff",
-        color: "#000",
-        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        padding: "2rem",
-        maxWidth: "1200px",
-        margin: "0 auto",
-      }}
-    >
-      <h2 style={{ fontWeight: "600", marginBottom: "1rem", textAlign: "center" }}>
-        Sobre FGM Materiales y Soluciones
-      </h2>
+    <section className="bg-white text-gray-900 font-sans px-4 py-10 max-w-6xl mx-auto relative">
+      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center tracking-tight">Sobre FGM Materiales y Soluciones</h2>
 
-      <p
-        style={{
-          textAlign: "justify",
-          lineHeight: "1.6",
-          fontSize: "1rem",
-          maxWidth: "800px",
-          margin: "0 auto 3rem",
-        }}
-      >
-        En FGM Materiales y Soluciones contamos con una sólida trayectoria como empresa
-        líder en el sector de la construcción, reconocida por brindar soluciones integrales,
-        eficientes y de alta calidad en cada proyecto. Nuestra experiencia y compromiso nos
-        han posicionado como un aliado estratégico tanto para desarrolladores, constructoras
-        como para clientes particulares.
-      </p>
-
-      <p
-        style={{
-          textAlign: "justify",
-          lineHeight: "1.6",
-          fontSize: "1rem",
-          maxWidth: "800px",
-          margin: "0 auto 3rem",
-        }}
-      >
-        Hoy, damos un paso más en nuestra evolución: incorporamos la comercialización de materiales
-        de construcción, ampliando nuestra propuesta de valor para acompañarte desde el inicio de tu obra.
-        Ofrecemos una amplia gama de productos de primeras marcas, asesoramiento técnico personalizado y un
-        servicio logístico ágil que asegura entregas rápidas y confiables en todo el país.
-      </p>
-
-      <p
-        style={{
-          textAlign: "justify",
-          fontStyle: "italic",
-          fontWeight: "600",
-          maxWidth: "800px",
-          margin: "0 auto 4rem",
-          fontSize: "1.1rem",
-          color: "#333",
-        }}
-      >
-        En FGM Materiales y Soluciones, no solo construimos estructuras: construimos confianza, eficiencia y soluciones que impulsan el crecimiento de nuestros clientes.
-      </p>
-
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-          gap: "1rem",
-          maxWidth: "900px",
-          margin: "0 auto",
-        }}
-      >
-        {images.map((src, idx) => (
+      <div className="flex flex-col md:flex-row md:items-center md:gap-16 mb-16 min-h-[600px]">
+        {/* Collage dinámico de imágenes */}
+        <div className="relative flex-1 flex justify-center items-center min-h-[420px] md:min-h-[540px]">
+          {/* Imagen principal grande */}
           <img
-            key={idx}
-            src={src}
-            alt={`Foto ${idx + 1}`}
-            style={{
-              width: "100%",
-              height: "150px",
-              objectFit: "cover",
-              borderRadius: "6px",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-              border: "1px solid #000",
-            }}
+            src={images[0]}
+            alt="Foto principal"
+            className="absolute z-20 left-1/2 top-1/2 w-48 h-64 md:w-64 md:h-80 object-cover rounded-xl shadow-2xl border-4 border-white transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 transition duration-300"
           />
-        ))}
+          {/* Imagen secundaria arriba izquierda */}
+          <img
+            src={images[1]}
+            alt="Foto secundaria 1"
+            className="absolute z-10 left-0 top-6 w-32 h-40 md:w-40 md:h-56 object-cover rounded-lg shadow-xl border-4 border-white hover:scale-105 transition duration-300 rotate-[-8deg]"
+          />
+          {/* Imagen secundaria abajo derecha */}
+          <img
+            src={images[2]}
+            alt="Foto secundaria 2"
+            className="absolute z-10 right-0 bottom-6 w-32 h-40 md:w-40 md:h-56 object-cover rounded-lg shadow-xl border-4 border-white hover:scale-105 transition duration-300 rotate-[7deg]"
+          />
+          {/* Imagen fondo difuminada */}
+          <img
+            src={images[3]}
+            alt="Foto fondo"
+            className="absolute z-0 left-1/4 top-1/4 w-28 h-32 md:w-36 md:h-44 object-cover rounded-lg opacity-70 blur-sm border-4 border-white"
+          />
+        </div>
+        {/* Textos con mayor separación a la derecha */}
+        <div className="flex-1 flex flex-col justify-center items-center h-full mt-12 md:mt-0 md:ml-36">
+          <div className="w-full max-w-2xl">
+            <p className="text-base md:text-xl leading-relaxed mb-8 text-justify md:text-center">
+              En FGM Materiales y Soluciones contamos con una sólida trayectoria como empresa
+              líder en el sector de la construcción, reconocida por brindar soluciones integrales,
+              eficientes y de alta calidad en cada proyecto. Nuestra experiencia y compromiso nos
+              han posicionado como un aliado estratégico tanto para desarrolladores, constructoras
+              como para clientes particulares.
+            </p>
+            <p className="text-base md:text-xl leading-relaxed mb-8 text-justify md:text-center">
+              Hoy, damos un paso más en nuestra evolución: incorporamos la comercialización de materiales
+              de construcción, ampliando nuestra propuesta de valor para acompañarte desde el inicio de tu obra.
+              Ofrecemos una amplia gama de productos de primeras marcas, asesoramiento técnico personalizado y un
+              servicio logístico ágil que asegura entregas rápidas y confiables en todo el país.
+            </p>
+            <p className="italic font-semibold mb-4 text-lg md:text-2xl text-center text-gray-700">
+              En FGM Materiales y Soluciones, no solo construimos estructuras: construimos confianza, eficiencia y soluciones que impulsan el crecimiento de nuestros clientes.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* WhatsApp fixed button */}
@@ -102,17 +70,12 @@ export const AboutRender: React.FC = () => {
         href="https://wa.me/5493515081452?text=Hola%20quisiera%20hacer%20una%20consulta"
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          position: "fixed",
-          bottom: "120px",
-          right: "20px",
-          zIndex: 1000,
-        }}
+        className="fixed bottom-24 right-6 z-50"
       >
         <img
           src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png"
           alt="WhatsApp"
-          style={{ width: 50, height: 50 }}
+          className="w-14 h-14 drop-shadow-lg hover:scale-110 transition-transform duration-200"
         />
       </Link>
     </section>

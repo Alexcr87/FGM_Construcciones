@@ -1,10 +1,7 @@
 "use client"
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
+
 import { ICategory } from "@/interface/ICategory";
 import RenderProducts from "./RenderProducts";
 import React from "react";
@@ -21,26 +18,12 @@ export const Products:React.FC<Props> = ({categorias}) => {
           <h2 className="text-3xl  font-light tracking-tight text-center mb-9">
             Renová tus Espacios al Mejor Precio
           </h2>
-          <Swiper
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-            modules={[Navigation, Pagination]}
-            
-          >
+          <div className="flex flex-row flex-wrap justify-center gap-8 w-full">
             {categorias.map((categoria) => (
-              <SwiperSlide key={categoria.id}>
-                <RenderProducts categorias={categoria} />
-              </SwiperSlide>
+                <RenderProducts categorias={categoria} key={categoria.id} />
             ))}
-          </Swiper>
-        </div>
+          </div>
+      </div>
       );
 
 

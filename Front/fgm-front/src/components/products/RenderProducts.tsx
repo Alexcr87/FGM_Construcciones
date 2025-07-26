@@ -21,7 +21,7 @@ export const RenderProducts: React.FC<Iprops> = ({ categorias }) => {
     }
  
     return (
-        <div className="relative h-90 rounded-lg overflow-hidden group shadow-md">
+        <div className="relative h-80 md:h-[350px] w-full md:w-[350px] flex-1 rounded-lg overflow-hidden group shadow-md">
           <img
             src={img}
             alt={name}

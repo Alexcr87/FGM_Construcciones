@@ -2,17 +2,31 @@
 import Products from "@/components/products/Products";
 import TextSlider from "@/components/textSlider/TextSlider";
 import Work from "@/components/works/Work";
-import { getCategorias } from "@/helper/categorias";
+import { getAllProducts, getCategorias, getCategoriasId } from "@/helper/categorias";
 import Link from "next/link";
+import BestSeller from "@/components/Bestseller.tsx/Bestseller";
+import React from "react";
+import { IProduct } from "@/interface/ICategory";
 
 
+const Home: React.FC = async () => {
 
+ 
 
-
-export default async function Home() {
 
   const categorias = await getCategorias()
+  const productos : IProduct[] =await getAllProducts()
+ 
+  
+  const productosFiltrados : IProduct[] = productos.filter((producto:IProduct) =>
+    producto.categories?.some((categoria) => categoria.name === "Más Vendidos")
+  );
+  
 
+
+
+  
+  
 
 
   return (
@@ -35,9 +49,12 @@ export default async function Home() {
           style={{ width: 50, height: 50 }}
         />
       </Link>
-
+      <BestSeller products={productosFiltrados}/>
       <Products categorias={categorias} />
       <Work />
     </div>
   );
 }
+
+
+export default Home;

@@ -30,18 +30,7 @@ export default function Footer() {
 
 
                 <div className="flex flex-col gap-3">
-                    <h3 className="text-gray-800 font-semibold">Seguinos en redes!</h3>
-                    <div className="flex gap-4 text-gray-600 text-xl">
-                        <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                            <FaInstagram className="hover:text-pink-600 transition" />
-                        </Link>
-                        <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <FaFacebookF className="hover:text-blue-600 transition" />
-                        </Link>
-                        <Link href="https://wa.me/5491112345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                            <FaWhatsapp className="hover:text-green-600 transition" />
-                        </Link>
-                    </div>
+   
                 </div>
                 <div className="flex flex-col gap-2">
                     <h3 className="text-lg font-semibold text-gray-800">NEWSLETTER</h3>

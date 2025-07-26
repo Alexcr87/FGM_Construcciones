@@ -4,12 +4,12 @@ export const getCategorias = async () => {
 
         const data = await response.json()
         return data
+        
 
     } catch (error) {
         console.log(`Error`, error);
     }
 }
-
 
 
 export const getCategoriasId = async (id: string) => {
@@ -22,6 +22,20 @@ export const getCategoriasId = async (id: string) => {
         console.log(`Error`, error);
 
     }
+
+
+}
+
+export const getAllProducts = async () => {
+    
+try {
+    const response = await fetch(`http://localhost:4000/product`)
+    const data = await response.json()
+    return data
+} catch (error) {
+    console.log(error);
+    
+}
 
 
 }

@@ -296,7 +296,7 @@ const productArray = [
     material: 'Acabado Brilloso',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -312,7 +312,7 @@ const productArray = [
     material: 'Acabado Brilloso',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -328,7 +328,7 @@ const productArray = [
     material: 'Acabado Brilloso',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -344,7 +344,7 @@ const productArray = [
     material: 'Símil hormigón alisado con vetas horizontales',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -360,7 +360,7 @@ const productArray = [
     material: 'Madera - PVC',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -376,7 +376,7 @@ const productArray = [
     material: 'Madera - PVC',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -392,7 +392,7 @@ const productArray = [
     material: 'Madera - PVC',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -408,7 +408,7 @@ const productArray = [
     material: 'Madera - PVC',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -424,7 +424,7 @@ const productArray = [
     material: 'Compuesto resistente a la humedad, rayos UV y fácil de limpiar',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },
@@ -440,7 +440,7 @@ const productArray = [
     material: 'Madera clara con vetas suaves y naturales - PVC',
     categories: [
       {
-        name: 'Mas Vendidos',
+        name: 'Más Vendidos',
       },
     ],
   },

@@ -284,6 +284,166 @@ const productArray = [
       },
     ],
   },
+  {
+    name: 'Placa de pvc simil marmol',
+    description:
+      'Anti humedad, impermeable. Buen comportamiento al fuego. Aislante térmico, eléctrico y acústico, Mantiene la temperatura interna lo más agradable durante todo el año. No requiere acabado extra. Duradera, larga vida útil. Fácil de colocar! Se pueden cortar fácilmente, con una sierra de diente fino o trincheta.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_01_p1jx3s.jpg',
+    is_active: true,
+    surface: 'Paredes y Pisos',
+    Box: '',
+    dimension: '120 x 240 cm',
+    material: 'Acabado Brilloso',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Placa de pvc simil marmol',
+    description:
+      'Anti humedad, impermeable. Buen comportamiento al fuego. Aislante térmico, eléctrico y acústico, Mantiene la temperatura interna lo más agradable durante todo el año. No requiere acabado extra. Duradera, larga vida útil. Fácil de colocar! Se pueden cortar fácilmente, con una sierra de diente fino o trincheta.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_xlbtfz.jpg',
+    is_active: true,
+    surface: 'Paredes y Pisos',
+    Box: '',
+    dimension: '120 x 240 cm',
+    material: 'Acabado Brilloso',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Placa de pvc simil marmol',
+    description:
+      'Anti humedad, impermeable. Buen comportamiento al fuego. Aislante térmico, eléctrico y acústico, Mantiene la temperatura interna lo más agradable durante todo el año. No requiere acabado extra. Duradera, larga vida útil. Fácil de colocar! Se pueden cortar fácilmente, con una sierra de diente fino o trincheta.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_02_a4kkhb.jpg',
+    is_active: true,
+    surface: 'Paredes y Pisos',
+    Box: '',
+    dimension: '120 x 240 cm',
+    material: 'Acabado Brilloso',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Placa de pvc simil hormigon',
+    description:
+      'Revestimiento decorativo diseñado para brindar un acabado industrial y minimalista en paredes interiores o exteriores. Su textura y color gris imitan el hormigón visto, ideal para ambientes modernos y contemporáneos.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558117/PVC_SIMIL_HORMIGON_lqnxd0.jpg',
+    is_active: true,
+    surface: 'Paredes y Pisos',
+    Box: '',
+    dimension: '',
+    material: 'Símil hormigón alisado con vetas horizontales',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Revestimiento wall panel pared interior Wpc - Claro FN',
+    description:
+      'Ventajas: Anti- insectos, impermeable, no le afecta la humedad, no requiere mantención, etc. Nivel retardante de fuego: B1(nivel más alto en WPC exterior) Instalación: Instalar fácilmente, sin juntas visibles( sistema de clips o silicona) Economía: se trata de un material duradero y estético, al no tener mantenimiento, no requerirá de gastos adicionales, y representa un significativo ahorro de tiempo y dinero a largo plazo.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PANEL_PARED_CLARO_FN_u7umyb.jpg',
+    is_active: true,
+    surface: 'Paredes',
+    Box: '',
+    dimension: '290 x 17 cm',
+    material: 'Madera - PVC',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Revestimiento wall panel pared interior Wpc - Oscuro FN',
+    description:
+      'Ventajas: Anti- insectos, impermeable, no le afecta la humedad, no requiere mantención, etc. Nivel retardante de fuego: B1(nivel más alto en WPC exterior) Instalación: Instalar fácilmente, sin juntas visibles( sistema de clips o silicona) Economía: se trata de un material duradero y estético, al no tener mantenimiento, no requerirá de gastos adicionales, y representa un significativo ahorro de tiempo y dinero a largo plazo.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PANEL_PARED_OSCURO_FN_gtrfey.jpg',
+    is_active: true,
+    surface: 'Paredes',
+    Box: '',
+    dimension: '290 x 16 cm',
+    material: 'Madera - PVC',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Revestimiento wall panel pared interior Wpc - Oscuro FC',
+    description:
+      'Ventajas: Anti- insectos, impermeable, no le afecta la humedad, no requiere mantención, etc. Nivel retardante de fuego: B1(nivel más alto en WPC exterior) Instalación: Instalar fácilmente, sin juntas visibles( sistema de clips o silicona) Economía: se trata de un material duradero y estético, al no tener mantenimiento, no requerirá de gastos adicionales, y representa un significativo ahorro de tiempo y dinero a largo plazo.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PANEL_PARED_OSCURO_FC_yc2cek.jpg',
+    is_active: true,
+    surface: 'Paredes',
+    Box: '',
+    dimension: '290 x 16 cm',
+    material: 'Madera - PVC',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Revestimiento wall panel pared interior Wpc - Oscuro',
+    description:
+      'Ventajas: Anti- insectos, impermeable, no le afecta la humedad, no requiere mantención, etc. Nivel retardante de fuego: B1(nivel más alto en WPC exterior) Instalación: Instalar fácilmente, sin juntas visibles( sistema de clips o silicona) Economía: se trata de un material duradero y estético, al no tener mantenimiento, no requerirá de gastos adicionales, y representa un significativo ahorro de tiempo y dinero a largo plazo.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753559236/PANEL_PARED_OSCURO_obwo61.jpg',
+    is_active: true,
+    surface: 'Paredes',
+    Box: '',
+    dimension: '290 x 17 cm',
+    material: 'Madera - PVC',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Piso flotante WPC encastrable',
+    description:
+      'Este panel combina la calidez del diseño en madera clara con vetas naturales y la modernidad de los bordes en negro. Fabricado en material resistente (PVC/WPC), es ideal para uso interior o exterior, aportando un acabado elegante y duradero. Compuesto resistente a la humedad, rayos UV y fácil de limpiar Instalación: Sistema de encastre sencillo y seguro Beneficios: Bajo mantenimiento, estética natural y alta durabilidad',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PISO_FLOTANTE_ENCASTRABLE_ojmg4p.jpg',
+    is_active: true,
+    surface: 'Revestimiento de paredes, cielorrasos, divisores y fachadas',
+    Box: '',
+    dimension: '',
+    material: 'Compuesto resistente a la humedad, rayos UV y fácil de limpiar',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'Piso flotante WPC Extra Liviano',
+    description:
+      'Listón de diseño elegante con acabado madera natural, ideal para crear espacios cálidos y modernos. Fabricado en material compuesto de alta resistencia, soporta la humedad y el desgaste diario, siendo perfecto para interiores y exteriores. Apariencia realista de madera sin necesidad de mantenimiento Alta durabilidad y resistencia a golpes Instalación rápida y limpia',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PISO_FLOTANTE_EXTRA_LIVIANO_prdgtt.jpg',
+    is_active: true,
+    surface: 'Revestimientos de paredes, cielorrasos, fachadas, divisores y muebles decorativos',
+    Box: '',
+    dimension: '',
+    material: 'Madera clara con vetas suaves y naturales - PVC',
+    categories: [
+      {
+        name: 'Mas Vendidos',
+      },
+    ],
+  },
 ];
 
 export default productArray;

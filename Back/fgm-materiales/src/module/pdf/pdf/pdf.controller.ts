@@ -19,6 +19,6 @@ export class PdfController {
 
   @Get(':id')
   getOneById(@Param('id') id: string) {
-    return this.pdfService.findOne(+id);
+    return this.pdfService.findOne(id);
   }
 }

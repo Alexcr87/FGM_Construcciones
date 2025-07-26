@@ -5,14 +5,14 @@ import RenderBestSeller from "./RenderBestSeller";
 import { useState } from "react";
 
 interface IProps {
-    products: IProduct[]
+    products: IProduct[];
 }
 
 export const BestSeller: React.FC<IProps> = ({ products }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const productsPerView = 4;
 
-    // Calcular cuántos grupos completos de 4 productos podemos mostrar
+    // Calcular cuántos grupos de 4 productos podemos mostrar
     const totalGroups = Math.ceil(products.length / productsPerView);
 
     const nextSlide = () => {
@@ -47,7 +47,7 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
     const currentProducts = getCurrentProducts();
 
     return (
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 py-8">
             {/* Título de la sección */}
             <div className="text-center mb-8">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2">
@@ -63,7 +63,7 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                 {/* Botón anterior */}
                 <button
                     onClick={prevSlide}
-                    className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-gray-200"
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-gray-200"
                     aria-label="Producto anterior"
                 >
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,8 +72,8 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                 </button>
 
                 {/* Contenedor de productos */}
-                <div className="overflow-hidden px-8 sm:px-12 lg:px-16">
-                    <div className="flex transition-transform duration-500 ease-in-out gap-6 sm:gap-8 lg:gap-10">
+                <div className="overflow-hidden px-12 sm:px-16 lg:px-20">
+                    <div className="flex transition-transform duration-500 ease-in-out gap-3 sm:gap-4 lg:gap-6">
                         {currentProducts.map((product: IProduct) => (
                             <div 
                                 key={product.id} 
@@ -88,7 +88,7 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                 {/* Botón siguiente */}
                 <button
                     onClick={nextSlide}
-                    className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-gray-200"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-gray-200"
                     aria-label="Siguiente producto"
                 >
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

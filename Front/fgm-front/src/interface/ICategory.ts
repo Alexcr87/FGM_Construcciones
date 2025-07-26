@@ -1,4 +1,4 @@
-import { UUID } from "crypto"
+
 
 export interface ICategory {
     id: string,
@@ -17,7 +17,7 @@ export interface IProduct {
     img: string,
     dimension:string,
     material:string,
-    box:String
+    box:string,
     is_active?: Boolean,
     creation?: Date,
     categories?: ICategory[]

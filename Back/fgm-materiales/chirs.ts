@@ -1,8 +1,9 @@
 export const categorias = [
     {
         name: 'Atlantis Decor',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-        img: "",
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
         Box: '2,36 m²',
@@ -20,7 +21,8 @@ export const categorias = [
 
     {
         name: 'Berton Nero Lux Mag',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento..',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento..',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -38,10 +40,10 @@ export const categorias = [
         ],
     },
 
-
     {
         name: 'Calacata Ibiza Mag',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -59,10 +61,10 @@ export const categorias = [
         ],
     },
 
-
     {
         name: 'Calacata Ibiza Lux Mag ',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -78,13 +80,11 @@ export const categorias = [
             },
         ],
     },
-
-
-
 
     {
         name: 'Collin Lux Mag',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -101,12 +101,10 @@ export const categorias = [
         ],
     },
 
-
-
-
     {
         name: 'Collin Lux Ultra',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -123,11 +121,10 @@ export const categorias = [
         ],
     },
 
-
-
     {
         name: 'Marmo Allure Lux',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -144,11 +141,10 @@ export const categorias = [
         ],
     },
 
-
-
     {
         name: 'Marmo Venus',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -159,15 +155,13 @@ export const categorias = [
             {
                 name: 'Porcelanatos y Porcelanicos',
             },
-           
         ],
     },
 
-
-
     {
         name: 'Marmo Gris Lux',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -178,17 +172,17 @@ export const categorias = [
             {
                 name: 'Porcelanatos y Porcelanicos',
             },
-          
+
             {
                 name: 'Pisos y Revestimientos',
             },
         ],
     },
 
-
     {
         name: 'Mont Blanc',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -199,19 +193,17 @@ export const categorias = [
             {
                 name: 'Porcelanatos y Porcelanicos',
             },
-          
+
             {
                 name: 'Pisos y Revestimientos',
             },
         ],
     },
 
-
-
-
     {
         name: 'Mont Blanc Polido',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -222,19 +214,17 @@ export const categorias = [
             {
                 name: 'Porcelanatos y Porcelanicos',
             },
-          
+
             {
                 name: 'Pisos y Revestimientos',
             },
         ],
     },
 
-
-
-
     {
         name: 'Ônix Cristallo Lux Ultra',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -245,15 +235,13 @@ export const categorias = [
             {
                 name: 'Porcelanatos y Porcelanicos',
             },
-          
         ],
     },
 
-
-
     {
         name: 'Ônix Ivory',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -264,15 +252,13 @@ export const categorias = [
             {
                 name: 'Porcelanatos y Porcelanicos',
             },
-        
         ],
     },
 
-
-
     {
         name: 'Ônix Perla Ultra',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -283,14 +269,13 @@ export const categorias = [
             {
                 name: 'Porcelanatos y Porcelanicos',
             },
-          
         ],
     },
 
-
     {
         name: 'Oregon Off White Lux',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -307,13 +292,10 @@ export const categorias = [
         ],
     },
 
-
-
-
-
     {
         name: 'Pettros Beige Out',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -330,10 +312,10 @@ export const categorias = [
         ],
     },
 
-
     {
         name: 'Pettros Gray out',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -352,7 +334,8 @@ export const categorias = [
 
     {
         name: 'Sevilha Decor',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -363,15 +346,13 @@ export const categorias = [
             {
                 name: 'Porcelanatos y Porcelanicos',
             },
-           
         ],
     },
 
-
-
     {
         name: 'Tiffany Mag Lux',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -385,15 +366,13 @@ export const categorias = [
             {
                 name: 'Pisos y Revestimientos',
             },
-           
         ],
     },
 
-
-
     {
         name: 'Trento Gray Out',
-        description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+        description:
+            'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
         img: '',
         is_active: true,
         surface: 'Pisos y Paredes',
@@ -407,13 +386,6 @@ export const categorias = [
             {
                 name: 'Pisos y Revestimientos',
             },
-           
         ],
     },
-
-
-
-
-
-
-]
+];

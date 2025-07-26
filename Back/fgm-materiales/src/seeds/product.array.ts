@@ -340,7 +340,7 @@ const productArray = [
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '',
-    dimension: '',
+    dimension: '120 x 240 cm',
     material: 'Símil hormigón alisado con vetas horizontales',
     categories: [
       {

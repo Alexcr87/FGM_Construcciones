@@ -10,28 +10,26 @@ export const seedProducts = async (dataSource: DataSource) => {
   let createdCount = 0;
 
   for (const prod of productArray) {
-    const exists = await productRepo.findOneBy({ name: prod.name });
-    if (!exists) {
-      // Buscar o crear categorías
-      const categories: Category[] = [];
-      for (const cat of prod.categories) {
-        let category = await categoryRepo.findOneBy({ name: cat.name });
-        if (!category) {
-          category = categoryRepo.create({ name: cat.name });
-          category = await categoryRepo.save(category);
-        }
-        categories.push(category);
+    // Buscar o crear categorías
+    const categories: Category[] = [];
+    for (const cat of prod.categories) {
+      let category = await categoryRepo.findOneBy({ name: cat.name });
+      if (!category) {
+        category = categoryRepo.create({ name: cat.name });
+        category = await categoryRepo.save(category);
       }
-
-      // Crear y guardar el producto con las categorías existentes
-      const newProduct = productRepo.create({
-        ...prod,
-        categories, // asociar las categorías ya con ID
-      });
-
-      await productRepo.save(newProduct);
-      createdCount++;
+      categories.push(category);
     }
+
+    // Crear y guardar el producto con las categorías existentes
+    const newProduct = productRepo.create({
+      ...prod,
+      categories, // asociar las categorías ya con ID
+    });
+
+    await productRepo.save(newProduct);
+    createdCount++;
+
   }
 
   if (createdCount > 0) {

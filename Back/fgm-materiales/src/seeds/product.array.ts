@@ -444,6 +444,382 @@ const productArray = [
       },
     ],
   },
+  {
+    name: 'Collin Lux Mag',
+    description:
+      'Ambientes comerciales y residenciales interiores, con tráfico medio de personas, sin acceso a áreas externas y sin tránsito de equipos. Indicado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Mag_ifjeel.jpg',
+    is_active: true,
+    surface: 'Paredes y Pisos',
+    Box: '2.16m2',
+    dimension: '85 x 85 cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Atlantis Decor',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: "https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657749/Atlantis_Decor_vr8e7r.jpg",
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,36 m²',
+    dimension: '64x123cm',
+    material: 'Aceitado',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Berton Nero Lux Mag',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento..',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657750/Berton_Nero_Lux_Mag_cwh0lj.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,16 m²',
+    dimension: '85x85cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Calacata Ibiza Mag',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Calacata_Ibiza_Mag_bwm9xe.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,16 m²',
+    dimension: '86x86cm',
+    material: 'Aceitado',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Calacata Ibiza Lux Mag ',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657749/Calacata_Ibiza_Ultra_Lux__nixjur.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2.16m2',
+    dimension: '85x85cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Collin Lux Mag',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Mag_ifjeel.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2.16m2',
+    dimension: '85x85cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Collin Lux Ultra',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Ultra_mfxpjy.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2.00m2',
+    dimension: '100x100cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Marmol Allure Lux',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657754/Marmo_allure_lux_ck0ro6.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,81 m²',
+    dimension: '75x75cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Marmol Venus',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Marmo_Venus_lkfo1l.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: ' 2,52 m²',
+    dimension: '60x60cm',
+    material: 'brillante',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+    ],
+  },
+  {
+    name: 'Marmol Gris Lux',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Marmol_gris_Lux_fmtfez.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: ' 2,81 m² m²',
+    dimension: '75x75cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Mont Blanc',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Montblanc_lqg4vv.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,87 m²',
+    dimension: '76x76cm',
+    material: 'Aceitado',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Mont Blanc Pulido',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657754/Montblanc_Pulido_ic5k2o.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,81 m²',
+    dimension: '75x75cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Ônix Cristallo Lux Ultra',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Cristallo_Lux_Ultra_ds2qgr.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,00 m²',
+    dimension: '100x100cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+    ],
+  },
+  {
+    name: 'Ônix Ivory',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Ivory_fjgczp.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,52 m²',
+    dimension: '60x60cm',
+    material: 'Brillante',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+    ],
+  },
+  {
+    name: 'Ônix Perla Ultra',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Perla_Ultra_c3vhhh.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,00 m²',
+    dimension: '100x100cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+    ],
+  },
+  {
+    name: 'Oregon Off White Lux',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Oregon_offwhite_lux_arhddb.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,81 m²',
+    dimension: ' 75x75cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Pettros Beige Out',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Pettros_Beige_Out_ebgkhk.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,52 m²',
+    dimension: ' 60x60cm',
+    material: 'Safe',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Pettros Gray out',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Pettros_Gray_Out_sjukzo.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,52 m²',
+    dimension: ' 60x60cm',
+    material: 'Safe',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+    ],
+  },
+  {
+    name: 'Sevilha Decor',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Sevilha_Decor_ntejho.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,36 m²',
+    dimension: ' 64x123cm',
+    material: 'Aceitado',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+
+    ],
+  },
+  {
+    name: 'Tiffany Mag Lux',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Tiffany_Mag_Lux_x0qlla.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,16 m²',
+    dimension: ' 85x85cm',
+    material: 'Pulido',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+
+    ],
+  },
+  {
+    name: 'Trento Gray Out',
+    description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657750/Trento_Gray_Out_af9uny.jpg',
+    is_active: true,
+    surface: 'Pisos y Paredes',
+    Box: '2,52 m²',
+    dimension: ' 60x60cm',
+    material: 'Safe',
+    categories: [
+      {
+        name: 'Porcelanatos y Porcelanicos',
+      },
+      {
+        name: 'Pisos y Revestimientos',
+      },
+
+    ],
+  },
 ];
 
 export default productArray;

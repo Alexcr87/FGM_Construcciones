@@ -2,6 +2,7 @@
 
 import { IoSearchSharp } from "react-icons/io5";
 import Link from "next/link";
+import Image from "next/image";
 import { ICategory } from "@/interface/ICategory";
 import { useState } from "react";
 
@@ -21,8 +22,8 @@ export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
     <nav className="w-full border-b border-gray-300 shadow-sm bg-white">
       <div className="max-w-8xl mx-auto flex items-center justify-between p-6">
         <Link href="/" className="flex flex-col items-center">
-          <img src="/assets/logo.png" alt="Logo FGM" className="h-15 w-auto mb-1" />
-       
+          <Image src="/assets/logo.png" alt="Logo FGM" width={60} height={60} className="h-15 w-auto mb-1" />
+
         </Link>
 
         <div className="hidden md:flex gap-10 text-gray-700 font-medium text-m items-center">

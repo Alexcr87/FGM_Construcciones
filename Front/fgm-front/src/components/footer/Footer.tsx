@@ -1,9 +1,7 @@
 "use client";
 
 
-import Link from "next/link";
 import { useState } from "react";
-import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
     const [email, setEmail] = useState("");
@@ -30,7 +28,7 @@ export default function Footer() {
 
 
                 <div className="flex flex-col gap-3">
-   
+
                 </div>
                 <div className="flex flex-col gap-2">
                     <h3 className="text-lg font-semibold text-gray-800">NEWSLETTER</h3>

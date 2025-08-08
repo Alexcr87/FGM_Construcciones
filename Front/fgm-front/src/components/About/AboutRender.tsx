@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const AboutRender: React.FC = () => {
   const images = [
@@ -18,27 +19,35 @@ export const AboutRender: React.FC = () => {
         {/* Collage dinámico de imágenes */}
         <div className="relative flex-1 flex justify-center items-center min-h-[420px] md:min-h-[540px]">
           {/* Imagen principal grande */}
-          <img
+          <Image
             src={images[0]}
             alt="Foto principal"
+            width={256}
+            height={320}
             className="absolute z-20 left-1/2 top-1/2 w-48 h-64 md:w-64 md:h-80 object-cover rounded-xl shadow-2xl border-4 border-white transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 transition duration-300"
           />
           {/* Imagen secundaria arriba izquierda */}
-          <img
+          <Image
             src={images[1]}
             alt="Foto secundaria 1"
+            width={160}
+            height={224}
             className="absolute z-10 left-0 top-6 w-32 h-40 md:w-40 md:h-56 object-cover rounded-lg shadow-xl border-4 border-white hover:scale-105 transition duration-300 rotate-[-8deg]"
           />
           {/* Imagen secundaria abajo derecha */}
-          <img
+          <Image
             src={images[2]}
             alt="Foto secundaria 2"
+            width={160}
+            height={224}
             className="absolute z-10 right-0 bottom-6 w-32 h-40 md:w-40 md:h-56 object-cover rounded-lg shadow-xl border-4 border-white hover:scale-105 transition duration-300 rotate-[7deg]"
           />
           {/* Imagen fondo difuminada */}
-          <img
+          <Image
             src={images[3]}
             alt="Foto fondo"
+            width={112}
+            height={128}
             className="absolute z-0 left-1/4 top-1/4 w-28 h-32 md:w-36 md:h-44 object-cover rounded-lg opacity-70 blur-sm border-4 border-white"
           />
         </div>
@@ -72,9 +81,11 @@ export const AboutRender: React.FC = () => {
         rel="noopener noreferrer"
         className="fixed bottom-24 right-6 z-50"
       >
-        <img
+        <Image
           src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png"
           alt="WhatsApp"
+          width={56}
+          height={56}
           className="w-14 h-14 drop-shadow-lg hover:scale-110 transition-transform duration-200"
         />
       </Link>

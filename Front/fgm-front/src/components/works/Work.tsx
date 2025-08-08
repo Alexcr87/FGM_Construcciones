@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export const Work: React.FC = () => {
   const images = [
@@ -25,9 +26,11 @@ export const Work: React.FC = () => {
             key={index}
             className="w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-md"
           >
-            <img
+            <Image
               src={src}
               alt={`Trabajo ${index + 1}`}
+              width={400}
+              height={300}
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>

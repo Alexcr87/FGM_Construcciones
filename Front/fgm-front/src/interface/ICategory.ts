@@ -15,10 +15,10 @@ export interface IProduct {
     name: string,
     description: string,
     img: string,
-    dimension:string,
-    material:string,
-    box:string,
-    is_active?: Boolean,
+    dimension: string,
+    material: string,
+    box: string,
+    is_active?: boolean,
     creation?: Date,
     categories?: ICategory[]
 }

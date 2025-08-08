@@ -2,6 +2,7 @@ import { IProduct } from "@/interface/ICategory";
 import React from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
 
 interface IProps {
   products: IProduct;
@@ -12,9 +13,11 @@ export const RenderDetail: React.FC<IProps> = ({ products }) => {
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-4 flex flex-col w-full max-w-sm transition duration-300 hover:shadow-md">
-      <img
+      <Image
         src={img}
         alt={name}
+        width={300}
+        height={144}
         className="w-full h-36 object-cover rounded-lg mb-3"
       />
       <h2 className="text-lg font-semibold text-gray-900 mb-1 truncate">{name}</h2>
@@ -37,7 +40,7 @@ export const RenderDetail: React.FC<IProps> = ({ products }) => {
             WhatsApp
           </button>
         </a>
-        <Link href={`/productos/${name.toLowerCase()}`} className="w-1/2">
+        <Link href={`/productos/${products.id}`} className="w-1/2">
           <button className="w-full text-sm py-2 border border-gray-300 rounded-md text-gray-800 hover:bg-gray-50 transition">
             Ver detalle
           </button>

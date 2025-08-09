@@ -53,7 +53,7 @@ export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
           <button
             className="flex items-center gap-1 px-2 py-1"
             onClick={() => setIsDesktopDropdownOpen(!isDesktopDropdownOpen)}
-            style={{ fontWeight: 'bold', background: 'none', border: 'none', cursor: 'pointer' }}
+            style={{ background: 'none', border: 'none', cursor: 'pointer' }}
           >
             CATEGORIAS
           </button>

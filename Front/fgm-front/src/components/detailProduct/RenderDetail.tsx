@@ -10,6 +10,8 @@ interface IProps {
 
 export const RenderDetail: React.FC<IProps> = ({ products }) => {
   const { name, img, description, box, dimension } = products;
+  const whatsappMessage = `Hola, me gustaría recibir más información sobre el producto "${name}". Me ha interesado y quisiera conocer detalles técnicos, disponibilidad y precio. Muchas gracias.`;
+  const whatsappUrl = `https://wa.me/5493515081452?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-4 flex flex-col w-full max-w-sm transition duration-300 hover:shadow-md">
@@ -28,9 +30,7 @@ export const RenderDetail: React.FC<IProps> = ({ products }) => {
       </div>
       <div className="flex gap-2 mt-auto">
         <a
-          href={`https://wa.me/?text=Hola,%20me%20interesa%20el%20producto%20${encodeURIComponent(
-            name
-          )}`}
+          href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="w-1/2"

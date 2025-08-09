@@ -14,6 +14,14 @@ const categories = [
     name: 'Porcelanatos y Porcelanicos',
     img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751382544/Porcelanato_y_Porcelanicos_mg62v2.jpg',
   },
+  {
+    name: 'Placas de Pvc',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751382544/Placas_PVC_az2rdu.jpg',
+  },
+  {
+    name: 'Baños y Sanitarios',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751382544/Ba%C3%B1os_y_Sanitarios_lce1lm.jpg',
+  },
 ];
 
 export const seedCategories = async (dataSource: DataSource) => {

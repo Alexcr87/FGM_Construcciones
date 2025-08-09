@@ -22,7 +22,7 @@ export default function Footer() {
                         Materiales y soluciones para tu hogar y proyectos.
                     </p>
                     <p>📍 Cruz Espacio, Cordoba</p>
-                    <p>📞 +54 9 11 1234 5678</p>
+                    <p>📞 +54 9 351 508 1452</p>
                     <p>📧 contacto@fgm.com</p>
                 </div>
 
@@ -54,7 +54,19 @@ export default function Footer() {
             </div>
 
             <div className="text-center text-xs text-gray-500 py-4 border-t border-gray-200 px-4">
-                © {new Date().getFullYear()} FGM. Todos los derechos reservados.
+                © {new Date().getFullYear()} FGM. Todos los derechos reservados.<br />
+                <span className="text-gray-400">
+                    Sitio creado por{' '}
+                    <a
+                        href="mailto:alexcr87@live.com.ar"
+                        className="underline hover:text-blue-600 transition"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Christian A. Rugna
+                    </a>
+                    {' '}y Tomas K. Morelli
+                </span>
             </div>
         </footer>
     );

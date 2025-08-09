@@ -3,27 +3,50 @@
 import { IoSearchSharp } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
-import { ICategory } from "@/interface/ICategory";
+import { ICategory, IProduct } from "@/interface/ICategory";
 import { useState } from "react";
+import { ProductSearchCard } from "@/components/productSearchCard/ProductSearchCard";
 
 interface ICategorias {
   categorias: ICategory[]
 }
 
-
-
 export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false);
+  const [search, setSearch] = useState("");
+  const [results, setResults] = useState<IProduct[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [showResults, setShowResults] = useState(false);
+
+  // Buscar productos en el backend
+  const handleSearch = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearch(value);
+    setShowResults(true);
+
+    if (value.length > 1) {
+      setLoading(true);
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BACK_UR}/product?search=${encodeURIComponent(value)}`);
+        const data = await res.json();
+        setResults(data);
+      } catch {
+        setResults([]);
+      }
+      setLoading(false);
+    } else {
+      setResults([]);
+      setShowResults(false);
+    }
+  };
 
   return (
     <nav className="w-full border-b border-gray-300 shadow-sm bg-white">
       <div className="max-w-8xl mx-auto flex items-center justify-between p-6">
         <Link href="/" className="flex flex-col items-center">
           <Image src="/assets/logo.png" alt="Logo FGM" width={60} height={60} className="h-15 w-auto mb-1" />
-
         </Link>
 
         <div className="hidden md:flex gap-10 text-gray-700 font-medium text-m items-center">
@@ -55,13 +78,23 @@ export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
           <Link href="/about">ABOUT</Link>
         </div>
 
-        <div className="hidden md:flex items-center border border-gray-400 rounded-full px-4 py-2 gap-2 w-72">
+        <div className="hidden md:flex items-center border border-gray-400 rounded-full px-4 py-2 gap-2 w-72 relative">
           <input
             type="text"
             placeholder="¿Qué estás buscando?"
             className="flex-grow focus:outline-none text-sm text-gray-700"
+            value={search}
+            onChange={handleSearch}
           />
           <IoSearchSharp className="text-gray-600" size={20} />
+          {loading && <div className="absolute top-full left-0 w-full bg-white text-center text-xs py-2">Buscando...</div>}
+          {results.length > 0 && showResults && (
+            <div className="absolute top-full left-0 w-full bg-white border border-gray-200 rounded shadow z-50 mt-2">
+              {results.map((p) => (
+                <ProductSearchCard key={p.id} product={p} onClick={() => setShowResults(false)} />
+              ))}
+            </div>
+          )}
         </div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}

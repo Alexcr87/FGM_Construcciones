@@ -2,6 +2,7 @@
 
 import { IProduct } from "@/interface/ICategory";
 import RenderBestSeller from "./RenderBestSeller";
+import Link from "next/link";
 import { useState } from "react";
 
 interface IProps {
@@ -75,12 +76,13 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                 <div className="overflow-hidden px-12 sm:px-16 lg:px-20">
                     <div className="flex transition-transform duration-500 ease-in-out gap-3 sm:gap-4 lg:gap-6">
                         {currentProducts.map((product: IProduct) => (
-                            <div 
-                                key={product.id} 
+                            <Link
+                                key={product.id}
+                                href={`/productos/${product.id}`}
                                 className="flex-shrink-0 w-1/4 min-w-0"
                             >
                                 <RenderBestSeller products={product} />
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
@@ -104,11 +106,10 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
-                            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-                                index === currentIndex 
-                                    ? 'bg-blue-600 scale-125' 
+                            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${index === currentIndex
+                                    ? 'bg-blue-600 scale-125'
                                     : 'bg-gray-300 hover:bg-gray-400'
-                            }`}
+                                }`}
                             aria-label={`Ir al slide ${index + 1}`}
                         />
                     ))}

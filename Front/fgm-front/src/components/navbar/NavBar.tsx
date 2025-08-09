@@ -29,7 +29,7 @@ export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
     if (value.length > 1) {
       setLoading(true);
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BACK_UR}/product?search=${encodeURIComponent(value)}`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BACK_URL}/product?search=${encodeURIComponent(value)}`);
         const data = await res.json();
         setResults(data);
       } catch {

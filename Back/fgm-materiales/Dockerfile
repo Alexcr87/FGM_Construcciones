@@ -1,9 +1,8 @@
 FROM node:20-bullseye
 WORKDIR /app
-RUN apt-get update && apt-get install -y build-essential python3
 COPY package.json package-lock.json* ./
-RUN npm install
+RUN apt-get update && apt-get install -y build-essential python3 && npm install --production
 COPY . .
 RUN npm run build
-EXPOSE 3000
+EXPOSE 4000
 CMD ["npm", "start"]

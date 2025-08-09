@@ -47,6 +47,7 @@ export const Work: React.FC = () => {
               width={400}
               height={300}
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>
         ))}

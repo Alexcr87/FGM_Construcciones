@@ -6,7 +6,6 @@ import Image from "next/image";
 export default async function products({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
     const producto = await getProductosByID(id);
-    console.log(producto, "productos");
 
     const whatsappMessage = `Hola, me gustaría recibir más información sobre el producto "${producto.name}". Me ha interesado y quisiera conocer detalles técnicos, disponibilidad y precio. Muchas gracias.`;
     const whatsappUrl = `https://wa.me/5493515081452?text=${encodeURIComponent(whatsappMessage)}`;
@@ -14,19 +13,19 @@ export default async function products({ params }: { params: Promise<{ id: strin
     const isBestseller = producto.categories?.some((cat: { name: string }) => cat.name === "Más Vendidos");
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-50">
-            <div className="bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col p-12 gap-10 w-[80%] min-h-[600px] mx-auto">
+            <div className="bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col p-4 sm:p-8 lg:p-12 gap-8 w-full max-w-4xl min-h-[400px] mx-auto">
                 {/* Título arriba centrado */}
-                <h1 className="text-4xl font-bold text-gray-900  text-center w-full">{producto.name}</h1>
-                <div className="flex flex-row gap-10 w-full">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 text-center w-full">{producto.name}</h1>
+                <div className="flex flex-col lg:flex-row gap-8 w-full">
                     {/* Imagen a la izquierda (más grande) */}
-                    <div className="relative flex-shrink-0 flex flex-col items-center justify-center w-2/3">
+                    <div className="relative flex-shrink-0 flex flex-col items-center justify-center w-full lg:w-2/3">
                         <div className="relative w-full">
                             <Image
                                 src={producto.img}
                                 alt={`Imagen de ${producto.name} - ${producto.material}, dimensiones ${producto.dimension}`}
                                 width={600}
                                 height={600}
-                                className="object-cover rounded-xl shadow-md w-full h-auto max-h-[600px]"
+                                className="object-cover rounded-xl shadow-md w-full h-auto max-h-[400px] sm:max-h-[500px] lg:max-h-[600px]"
                             />
                             {isBestseller && (
                                 <span className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm z-10">
@@ -36,9 +35,9 @@ export default async function products({ params }: { params: Promise<{ id: strin
                         </div>
                     </div>
                     {/* Descripción y detalles a la derecha (más pequeño) */}
-                    <div className="flex flex-col justify-between flex-grow w-1/3">
-                        <p className="text-gray-700 text-lg mb-6 text-left whitespace-pre-line leading-relaxed">{producto.description}</p>
-                        <div className="flex flex-col text-base text-gray-500 mb-6">
+                    <div className="flex flex-col justify-between flex-grow w-full lg:w-1/3 mt-6 lg:mt-0">
+                        <p className="text-gray-700 text-base sm:text-lg mb-4 text-left whitespace-pre-line leading-relaxed">{producto.description}</p>
+                        <div className="flex flex-col text-sm sm:text-base text-gray-500 mb-4">
                             <span>Material: {producto.material}</span>
                             <span>Dimensiones: {producto.dimension}</span>
                             {producto.surface && <span>Superficie: {producto.surface}</span>}

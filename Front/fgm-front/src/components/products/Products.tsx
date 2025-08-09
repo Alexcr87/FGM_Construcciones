@@ -7,24 +7,24 @@ import RenderProducts from "./RenderProducts";
 import React from "react";
 
 interface Props {
-    categorias: ICategory[];
-  }
+  categorias: ICategory[];
+}
 
-export const Products:React.FC<Props> = ({categorias}) => {
+export const Products: React.FC<Props> = ({ categorias }) => {
 
 
-    return  (
-      <div className="px-15 py-15 h-full bg-[rgba(246,245,243,0.8)] ml-5 mr-4 rounded-xl mt-5">
-          <h2 className="text-3xl  font-light tracking-tight text-center mb-9">
-            Renová tus Espacios al Mejor Precio
-          </h2>
-          <div className="flex flex-row flex-wrap justify-center gap-8 w-full">
-            {categorias.map((categoria) => (
-                <RenderProducts categorias={categoria} key={categoria.id} />
-            ))}
-          </div>
+  return (
+    <div className="w-full h-full bg-[rgba(246,245,243,0.8)] rounded-xl mt-5 px-2 py-6 sm:px-6 sm:py-10 lg:px-12 lg:py-14 mx-auto">
+      <h2 className="text-xl sm:text-2xl lg:text-3xl font-light tracking-tight text-center mb-6 lg:mb-9">
+        Renová tus Espacios al Mejor Precio
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full justify-items-center">
+        {categorias.map((categoria) => (
+          <RenderProducts categorias={categoria} key={categoria.id} />
+        ))}
       </div>
-      );
+    </div>
+  );
 
 
 }

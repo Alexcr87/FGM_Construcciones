@@ -9,23 +9,26 @@ const pdfs = [
 
 export default function CatalogosPage() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
-            {pdfs.map((pdf) => (
-                <div
-                    key={pdf.url}
-                    className="bg-white rounded-lg shadow p-4 flex flex-col items-center cursor-pointer hover:bg-gray-100 transition"
-                    onClick={() => window.open(pdf.url, "_blank")}
-                >
-                    <iframe
-                        src={pdf.url}
-                        width="200"
-                        height="250"
-                        className="mb-4 border rounded"
-                        title={pdf.name}
-                    />
-                    <div className="font-semibold text-center">{pdf.name}</div>
-                </div>
-            ))}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-8 text-center">Catálogos PDF</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {pdfs.map((pdf) => (
+                    <div
+                        key={pdf.url}
+                        className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center cursor-pointer hover:bg-gray-100 transition min-h-[380px] sm:min-h-[420px] lg:min-h-[480px]"
+                        onClick={() => window.open(pdf.url, "_blank")}
+                    >
+                        <div className="w-full flex justify-center">
+                            <iframe
+                                src={pdf.url}
+                                className="mb-4 border rounded w-full max-w-[380px] h-[280px] sm:max-w-[440px] sm:h-[340px] lg:max-w-[520px] lg:h-[400px]"
+                                title={pdf.name}
+                            />
+                        </div>
+                        <div className="font-semibold text-center text-lg sm:text-xl mt-4">{pdf.name}</div>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }

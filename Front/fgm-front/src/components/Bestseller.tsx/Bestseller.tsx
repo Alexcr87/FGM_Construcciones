@@ -3,7 +3,7 @@
 import { IProduct } from "@/interface/ICategory";
 import RenderBestSeller from "./RenderBestSeller";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface IProps {
     products: IProduct[];
@@ -11,9 +11,25 @@ interface IProps {
 
 export const BestSeller: React.FC<IProps> = ({ products }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const productsPerView = 4;
+    // Responsive: productsPerView como estado
+    const [productsPerView, setProductsPerView] = useState(4);
 
-    // Calcular cuántos grupos de 4 productos podemos mostrar
+    useEffect(() => {
+        const handleResize = () => {
+            const newPerView = window.innerWidth < 640 ? 1 : 4;
+            setProductsPerView(newPerView);
+            // Ajustar el índice si queda fuera de rango
+            setCurrentIndex((prev) => {
+                const maxIndex = Math.max(0, Math.ceil(products.length / newPerView) - 1);
+                return prev > maxIndex ? maxIndex : prev;
+            });
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    // Calcular cuántos grupos de productos podemos mostrar
     const totalGroups = Math.ceil(products.length / productsPerView);
 
     const nextSlide = () => {
@@ -60,26 +76,26 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
             </div>
 
             {/* Contenedor del slider */}
-            <div className="relative">
-                {/* Botón anterior */}
+            <div className="relative w-full flex items-center justify-center">
+                {/* Botón anterior siempre visible en mobile */}
                 <button
                     onClick={prevSlide}
                     className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-gray-200"
                     aria-label="Producto anterior"
                 >
-                    <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
 
                 {/* Contenedor de productos */}
-                <div className="overflow-hidden px-12 sm:px-16 lg:px-20">
-                    <div className="flex transition-transform duration-500 ease-in-out gap-3 sm:gap-4 lg:gap-6">
+                <div className="overflow-visible px-2 sm:px-12 lg:px-20 w-full">
+                    <div className="flex flex-row transition-transform duration-500 ease-in-out gap-4 items-stretch justify-center">
                         {currentProducts.map((product: IProduct) => (
                             <Link
                                 key={product.id}
                                 href={`/productos/${product.id}`}
-                                className="flex-shrink-0 w-1/4 min-w-0"
+                                className="flex-shrink-0 w-full sm:w-1/4 min-w-0"
                             >
                                 <RenderBestSeller products={product} />
                             </Link>
@@ -87,34 +103,17 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                     </div>
                 </div>
 
-                {/* Botón siguiente */}
+                {/* Botón siguiente siempre visible en mobile */}
                 <button
                     onClick={nextSlide}
                     className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-gray-200"
                     aria-label="Siguiente producto"
                 >
-                    <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </button>
             </div>
-
-            {/* Indicadores de navegación */}
-            {totalGroups > 1 && (
-                <div className="flex justify-center mt-6 space-x-2">
-                    {Array.from({ length: totalGroups }, (_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentIndex(index)}
-                            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${index === currentIndex
-                                    ? 'bg-blue-600 scale-125'
-                                    : 'bg-gray-300 hover:bg-gray-400'
-                                }`}
-                            aria-label={`Ir al slide ${index + 1}`}
-                        />
-                    ))}
-                </div>
-            )}
         </div>
     );
 };

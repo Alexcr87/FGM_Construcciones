@@ -12,7 +12,6 @@ interface ICategorias {
 }
 
 export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false);
   const [search, setSearch] = useState("");
@@ -44,36 +43,20 @@ export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
 
   return (
     <nav className="w-full border-b border-gray-300 shadow-sm bg-white">
-      <div className="max-w-8xl mx-auto flex items-center justify-between p-6">
+      <div className="max-w-8xl mx-auto flex items-center justify-between p-3">
         <Link href="/" className="flex flex-col items-center">
           <Image src="/assets/logo.png" alt="Logo FGM" width={60} height={60} className="h-15 w-auto mb-1" />
         </Link>
 
         <div className="hidden md:flex gap-10 text-gray-700 font-medium text-m items-center">
           <Link href="/">INICIO</Link>
-          <div
-            className="relative"
-            onMouseEnter={() => setIsDesktopDropdownOpen(true)}
-            onMouseLeave={() => setIsDesktopDropdownOpen(false)}
+          <button
+            className="flex items-center gap-1 px-2 py-1"
+            onClick={() => setIsDesktopDropdownOpen(!isDesktopDropdownOpen)}
+            style={{ fontWeight: 'bold', background: 'none', border: 'none', cursor: 'pointer' }}
           >
-            <button className="flex items-center gap-1 px-2 py-1">
-              CATEGORIAS <span className="text-xs">▼</span>
-            </button>
-            {isDesktopDropdownOpen && (
-              <div className="absolute top-full left-0 bg-white border border-gray-200 shadow-md rounded-md z-50 min-w-[220px]">
-                {categorias.map(cat => (
-                  <Link
-                    key={cat.id}
-                    href={`/categorias/${cat.id}`}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    {cat.name}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
+            CATEGORIAS
+          </button>
           <Link href="/catalogos">CATÁLOGOS</Link>
           <Link href="/about">ABOUT</Link>
         </div>
@@ -96,48 +79,76 @@ export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
             </div>
           )}
         </div>
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-gray-700"
-        >
-          ☰
-        </button>
+        {/* Eliminado el botón hamburguesa en mobile */}
       </div>
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-4 py-2 space-y-2">
+      {/* Fila de categorías debajo del navbar principal */}
+      {isDesktopDropdownOpen && (
+        <div className="w-full flex justify-center gap-4 py-2 bg-white border-b border-gray-200">
+          {categorias.map(cat => (
+            <Link
+              key={cat.id}
+              href={`/categorias/${cat.id}`}
+              className="px-5 py-2 rounded-full bg-gray-100 text-gray-800 font-medium shadow hover:bg-gray-200 transition-all"
+              style={{ border: 'none', minWidth: '120px', textAlign: 'center' }}
+            >
+              {cat.name.toUpperCase()}
+            </Link>
+          ))}
+        </div>
+      )}
+      {/* Responsive navbar: enlaces horizontales y barra de búsqueda debajo */}
+      <div className="md:hidden w-full bg-white border-t border-gray-200 flex flex-col items-center">
+        <div className="flex flex-wrap justify-center gap-2 py-1 w-full">
+          <Link href="/" className="px-2 py-1 text-gray-700 font-medium text-xs">INICIO</Link>
+          <button
+            className="px-2 py-1 text-gray-700 font-semibold bg-transparent border-none text-xs"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            style={{ cursor: 'pointer' }}
+          >
+            CATEGORIAS
+          </button>
+          <Link href="/catalogos" className="px-2 py-1 text-gray-700 font-medium text-xs">CATÁLOGOS</Link>
+          <Link href="/about" className="px-2 py-1 text-gray-700 font-medium text-xs">ABOUT</Link>
+        </div>
+        <div className="w-full flex justify-center pb-1">
           <input
             type="text"
             placeholder="¿Qué estás buscando?"
-            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none"
+            className="w-11/12 border border-gray-300 rounded-full px-3 py-1 text-xs focus:outline-none"
+            value={search}
+            onChange={handleSearch}
           />
-          <Link href="/" className="block text-gray-700">INICIO</Link>
-          <div>
-            <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="flex items-center justify-between w-full text-gray-700"
-            >
-              <span>CATEGORIAS</span>
-              <span className="text-xs">{isDropdownOpen ? "▲" : "▼"}</span>
-            </button>
-            {isDropdownOpen && (
-              <div className="mt-1 pl-3 space-y-1">
-                {categorias.map(cat => (
-                  <Link
-                    key={cat.id}
-                    href={`/categorias/${cat.id}`}
-                    className="block text-sm text-gray-600"
-                  >
-                    {cat.name}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <Link href="/catalogos" className="block text-gray-700">CATÁLOGOS</Link>
-          <Link href="/about" className="block text-gray-700">ABOUT</Link>
+          <IoSearchSharp className="text-gray-600 ml-2 mt-1" size={18} />
         </div>
-      )}
+        {isDropdownOpen && (
+          <div className="w-full flex flex-col items-center gap-1 py-1">
+            <div className="flex justify-center gap-1 w-full">
+              {categorias.slice(0, 3).map(cat => (
+                <Link
+                  key={cat.id}
+                  href={`/categorias/${cat.id}`}
+                  className="px-2 py-0.5 rounded-full bg-gray-100 text-gray-800 font-medium text-[0.7rem] shadow hover:bg-gray-200 transition-all"
+                  style={{ border: 'none', minWidth: '70px', textAlign: 'center', fontSize: '0.75rem', lineHeight: '1.1' }}
+                >
+                  {cat.name.toUpperCase()}
+                </Link>
+              ))}
+            </div>
+            <div className="flex justify-center gap-1 w-full mt-1">
+              {categorias.slice(3).map(cat => (
+                <Link
+                  key={cat.id}
+                  href={`/categorias/${cat.id}`}
+                  className="px-2 py-0.5 rounded-full bg-gray-100 text-gray-800 font-medium text-[0.7rem] shadow hover:bg-gray-200 transition-all"
+                  style={{ border: 'none', minWidth: '70px', textAlign: 'center', fontSize: '0.75rem', lineHeight: '1.1' }}
+                >
+                  {cat.name.toUpperCase()}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };

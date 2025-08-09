@@ -19,7 +19,7 @@ import { v4 as uuidv4 } from 'uuid';
 @ApiBearerAuth()
 @Controller('files')
 export class FilesController {
-  constructor(private readonly fileService: FilesService) {}
+  constructor(private readonly fileService: FilesService) { }
 
   @ApiBearerAuth()
   @Post('/image/:id')
@@ -47,7 +47,6 @@ export class FilesController {
     )
     file: Express.Multer.File,
   ) {
-    console.log(request.user);
     const url = await this.fileService.uploadFile(file, id);
     return { imgUrl: url };
   }

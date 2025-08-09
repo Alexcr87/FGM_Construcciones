@@ -3,7 +3,7 @@ const productArray = [
     name: 'Alameda Carvalho',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://example.com/images/silla-https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480959/Alameda_Carvalho_jrkww2.jpg.jpg',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480959/Alameda_Carvalho_jrkww2.jpg.jpg',
     is_active: true,
     surface: 'Paredes',
     Box: '2.02m2',

@@ -8,6 +8,7 @@ import {
   ParseUUIDPipe,
   Post,
   Put,
+  Query,
 } from '@nestjs/common';
 import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 import { ProductService } from './product.service';
@@ -17,11 +18,15 @@ import { createProductDto, updateProductDto } from 'src/Dtos/createProductDto';
 @ApiBearerAuth()
 @Controller('product')
 export class ProductController {
-  constructor(private readonly productService: ProductService) {}
+  constructor(private readonly productService: ProductService) { }
+
 
   @Get()
   @HttpCode(200)
-  getAllproducts() {
+  async getProducts(@Query('search') search?: string) {
+    if (search) {
+      return this.productService.searchProducts(search);
+    }
     return this.productService.getAllproducts();
   }
 
@@ -58,4 +63,6 @@ export class ProductController {
   createMultipleProduct(@Body() product: createProductDto[]) {
     return this.productService.createMultipleProducts(product);
   }
+
+  // ...existing code...
 }

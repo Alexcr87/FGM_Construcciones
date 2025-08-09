@@ -8,6 +8,7 @@ import { FilesModule } from './module/files/files.module';
 import { CloudinaryConfig } from './config/cloudinary.config';
 import { JwtModule } from '@nestjs/jwt';
 import { CategoryModule } from './module/category/category.module';
+import { PdfModule } from './module/pdf/pdf/pdf.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { CategoryModule } from './module/category/category.module';
     ProductModule,
     FilesModule,
     CategoryModule,
+    PdfModule,
     JwtModule.register({
       global: true,
       signOptions: { expiresIn: '1h' },
@@ -37,4 +39,4 @@ import { CategoryModule } from './module/category/category.module';
   controllers: [],
   providers: [AppService, CloudinaryConfig],
 })
-export class AppModule {}
+export class AppModule { }

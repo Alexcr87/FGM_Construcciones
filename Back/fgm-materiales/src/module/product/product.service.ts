@@ -9,7 +9,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { createProductDto, updateProductDto } from 'src/Dtos/createProductDto';
 import { Product } from 'src/entities/product.entity';
 import { Category } from 'src/entities/category.entity';
-import { In, Repository } from 'typeorm';
+import { ILike, In, Repository } from 'typeorm';
 
 @Injectable()
 export class ProductService {
@@ -18,7 +18,7 @@ export class ProductService {
     private readonly productRepository: Repository<Product>,
     @InjectRepository(Category)
     private readonly categoryRepository: Repository<Category>,
-  ) {}
+  ) { }
 
   async getProductByid(id: string): Promise<Product> {
     try {
@@ -150,5 +150,18 @@ export class ProductService {
     }
 
     return createdProducts;
+  }
+
+  async searchProducts(search: string) {
+    if (!search) return [];
+    return this.productRepository.find({
+      where: [
+        { name: ILike(`%${search}%`) },
+        { description: ILike(`%${search}%`) },
+        // Si tienes relación con categoría, puedes agregarla aquí
+      ],
+      relations: ['categories'], // si tienes relación con categorías
+      take: 20, // límite opcional
+    });
   }
 }

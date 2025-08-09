@@ -27,7 +27,7 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
         handleResize();
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    }, [products.length]);
 
     // Calcular cuántos grupos de productos podemos mostrar
     const totalGroups = Math.ceil(products.length / productsPerView);

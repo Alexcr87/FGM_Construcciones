@@ -866,21 +866,6 @@ const productArray = [
     ],
   },
   {
-    name: 'SLH-S252',
-    description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180542/SLH-S252_ttkjig.jpg',
-    is_active: true,
-    surface: '',
-    Box: '',
-    dimension: '220x113x70cm',
-    material: '',
-    categories: [
-      {
-        name: 'Sofá y Colchones',
-      }
-    ],
-  },
-  {
     name: 'SLH-S248',
     description: 'Tres Plazas',
     img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180540/SLH-S248_cfhuiu.jpg',

@@ -1,3 +1,4 @@
+"use client"
 import { IProduct } from "@/interface/ICategory";
 import React from "react";
 import Link from "next/link";
@@ -9,7 +10,7 @@ interface IProps {
 }
 
 export const RenderDetail: React.FC<IProps> = ({ products }) => {
-  const { name, img, description, box, dimension } = products;
+  const { name, img, description, box, dimension, categories } = products;
   const whatsappMessage = `Hola, me gustaría recibir más información sobre el producto "${name}". Me ha interesado y quisiera conocer detalles técnicos, disponibilidad y precio. Muchas gracias.`;
   const whatsappUrl = `https://wa.me/5493515081452?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -20,12 +21,12 @@ export const RenderDetail: React.FC<IProps> = ({ products }) => {
         alt={name}
         width={300}
         height={144}
-        className="w-full h-36 object-cover rounded-lg mb-3"
+        className={`w-full ${categories?.some((cat: { name: string }) => cat.name === "Sofá y Colchones") ? "object-contain max-h-32 mx-auto" : "h-36 object-cover"} rounded-lg mb-3`}
       />
       <h2 className="text-lg font-semibold text-gray-900 mb-1 truncate">{name}</h2>
       <p className="text-sm text-gray-600 mb-2 line-clamp-3">{description}</p>
       <div className="text-xs text-gray-500 mb-4">
-        <p>Caja: {box}</p>
+        {box && box.trim() !== "" && <p>Caja: {box}</p>}
         <p>Dimensiones: {dimension}</p>
       </div>
       <div className="flex gap-2 mt-auto">

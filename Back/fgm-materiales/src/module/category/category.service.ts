@@ -14,7 +14,7 @@ export class CategoryService {
   constructor(
     @InjectRepository(Category)
     private readonly categoryRepository: Repository<Category>,
-  ) {}
+  ) { }
 
   async getAllCategory(): Promise<Category[]> {
     try {
@@ -30,7 +30,7 @@ export class CategoryService {
     try {
       const category = await this.categoryRepository.findOne({
         where: { id },
-        relations: ['products'],
+        relations: ['products', 'products.categories'],
       });
       if (!category) {
         throw new NotFoundException(

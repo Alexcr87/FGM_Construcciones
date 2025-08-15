@@ -8,7 +8,7 @@ interface IProducts {
 }
 
 export const RenderBestSeller: React.FC<IProducts> = ({ products }) => {
-    const { name, img, description, material } = products;
+    const { name, images, description, material } = products;
 
     const handleWhatsAppClick = () => {
         const message = `Hola, me gustaría recibir más información sobre el producto "${name}". Me ha interesado y quisiera conocer detalles técnicos, disponibilidad y precio. Muchas gracias.`;
@@ -21,7 +21,7 @@ export const RenderBestSeller: React.FC<IProducts> = ({ products }) => {
             {/* Contenedor de imagen - altura fija optimizada */}
             <div className="relative overflow-hidden" style={{ height: '220px' }}>
                 <Image
-                    src={img}
+                    src={images?.[0] || '/assets/logo.png'}
                     alt={name}
                     width={350}
                     height={220}

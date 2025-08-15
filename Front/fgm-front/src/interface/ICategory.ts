@@ -4,7 +4,7 @@ export interface ICategory {
     id: string,
     name: string,
     description?: string,
-    img: string,
+    images: string[],
     products?: IProduct[]
 }
 
@@ -14,7 +14,7 @@ export interface IProduct {
     id: string,
     name: string,
     description: string,
-    img: string,
+    images: string[],
     dimension: string,
     material: string,
     box: string,

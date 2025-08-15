@@ -3,8 +3,7 @@ const productArray = [
     name: 'Alameda Carvalho',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480959/Alameda_Carvalho_jrkww2.jpg',
-    is_active: true,
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480959/Alameda_Carvalho_jrkww2.jpg'],
     surface: 'Paredes',
     Box: '2.02m2',
     dimension: '38 x 76 cm',
@@ -22,7 +21,7 @@ const productArray = [
     name: 'Marchetaria Lux',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480959/Marchetaria_Lux_ebxftu.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480959/Marchetaria_Lux_ebxftu.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '2.43m2',
@@ -41,7 +40,7 @@ const productArray = [
     name: 'Magma Gray',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480959/Magma_Gray_sdwt80.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480959/Magma_Gray_sdwt80.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '1.52m2',
@@ -60,7 +59,7 @@ const productArray = [
     name: 'Magma Canyon',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480958/Magma_Canyon_nxemjv.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480958/Magma_Canyon_nxemjv.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '1.52m2',
@@ -79,7 +78,7 @@ const productArray = [
     name: 'Aurora Color',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480953/Aurora_Color_gdgqpv.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480953/Aurora_Color_gdgqpv.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '2.34m2',
@@ -98,7 +97,7 @@ const productArray = [
     name: 'Aurora Blue',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480953/Aurora_Blue_uxyndf.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480953/Aurora_Blue_uxyndf.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '2.34m2',
@@ -117,7 +116,7 @@ const productArray = [
     name: 'Tokio White',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Tokio_White_ibjtdr.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Tokio_White_ibjtdr.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '2.34m2',
@@ -136,7 +135,7 @@ const productArray = [
     name: 'Galaxia Gray',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Galaxia_Gray_vvltvh.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Galaxia_Gray_vvltvh.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '2.34m2',
@@ -155,7 +154,7 @@ const productArray = [
     name: 'Oregon Off White Lux',
     description:
       'Ambientes comerciales y residenciales interiores, con tráfico medio de personas, sin acceso a áreas externas y sin tránsito de equipos. Indicado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Oregon_Off_White_Lux_om72f2.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Oregon_Off_White_Lux_om72f2.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '1.94m2',
@@ -174,7 +173,7 @@ const productArray = [
     name: 'Oregon Off White Lux',
     description:
       'Ambientes comerciales y residenciales interiores, con tráfico medio de personas, sin acceso a áreas externas y sin tránsito de equipos. Indicado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Oregon_Off_White_Lux_om72f2.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Oregon_Off_White_Lux_om72f2.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '1.94m2',
@@ -193,7 +192,7 @@ const productArray = [
     name: 'Onix Capri Lux',
     description:
       'Ambientes comerciales y residenciales interiores, con tráfico medio de personas, sin acceso a áreas externas y sin tránsito de equipos. Indicado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/%C3%94nix_Capri_Lux_sgzb40.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/%C3%94nix_Capri_Lux_sgzb40.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '1.94m2',
@@ -212,7 +211,7 @@ const productArray = [
     name: 'Onix Capri Lux',
     description:
       'Ambientes comerciales y residenciales interiores, con tráfico medio de personas, sin acceso a áreas externas y sin tránsito de equipos. Indicado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/%C3%94nix_Capri_Lux_sgzb40.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/%C3%94nix_Capri_Lux_sgzb40.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '1.94m2',
@@ -231,7 +230,7 @@ const productArray = [
     name: 'Tokio Blue',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Tokio_Blue_nzftjm.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480952/Tokio_Blue_nzftjm.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '2.34m2',
@@ -250,7 +249,7 @@ const productArray = [
     name: 'Tokio Nero',
     description:
       'Paredes residenciales y comerciales internas y externas de hasta 3 metros de altura.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480951/Tokio_Nero_b3712x.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480951/Tokio_Nero_b3712x.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '2.34m2',
@@ -269,7 +268,7 @@ const productArray = [
     name: 'Onix Capri Lux',
     description:
       'Ambientes comerciales y residenciales interiores, con tráfico medio de personas, sin acceso a áreas externas y sin tránsito de equipos. Indicado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480951/Mont_Blanc_Lux_wed7vb.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1751480951/Mont_Blanc_Lux_wed7vb.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '1.94m2',
@@ -288,7 +287,7 @@ const productArray = [
     name: 'Placa de pvc simil marmol',
     description:
       'Anti humedad, impermeable. Buen comportamiento al fuego. Aislante térmico, eléctrico y acústico, Mantiene la temperatura interna lo más agradable durante todo el año. No requiere acabado extra. Duradera, larga vida útil. Fácil de colocar! Se pueden cortar fácilmente, con una sierra de diente fino o trincheta.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_01_p1jx3s.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_01_p1jx3s.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '',
@@ -304,7 +303,7 @@ const productArray = [
     name: 'Placa de pvc simil marmol',
     description:
       'Anti humedad, impermeable. Buen comportamiento al fuego. Aislante térmico, eléctrico y acústico, Mantiene la temperatura interna lo más agradable durante todo el año. No requiere acabado extra. Duradera, larga vida útil. Fácil de colocar! Se pueden cortar fácilmente, con una sierra de diente fino o trincheta.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_xlbtfz.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_xlbtfz.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '',
@@ -320,7 +319,7 @@ const productArray = [
     name: 'Placa de pvc simil marmol',
     description:
       'Anti humedad, impermeable. Buen comportamiento al fuego. Aislante térmico, eléctrico y acústico, Mantiene la temperatura interna lo más agradable durante todo el año. No requiere acabado extra. Duradera, larga vida útil. Fácil de colocar! Se pueden cortar fácilmente, con una sierra de diente fino o trincheta.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_02_a4kkhb.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PVC_SIMIL_MARMOL_02_a4kkhb.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '',
@@ -336,7 +335,7 @@ const productArray = [
     name: 'Placa de pvc simil hormigon',
     description:
       'Revestimiento decorativo diseñado para brindar un acabado industrial y minimalista en paredes interiores o exteriores. Su textura y color gris imitan el hormigón visto, ideal para ambientes modernos y contemporáneos.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558117/PVC_SIMIL_HORMIGON_lqnxd0.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558117/PVC_SIMIL_HORMIGON_lqnxd0.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '',
@@ -352,7 +351,7 @@ const productArray = [
     name: 'Revestimiento wall panel pared interior Wpc - Claro FN',
     description:
       'Ventajas: Anti- insectos, impermeable, no le afecta la humedad, no requiere mantención, etc. Nivel retardante de fuego: B1(nivel más alto en WPC exterior) Instalación: Instalar fácilmente, sin juntas visibles( sistema de clips o silicona) Economía: se trata de un material duradero y estético, al no tener mantenimiento, no requerirá de gastos adicionales, y representa un significativo ahorro de tiempo y dinero a largo plazo.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PANEL_PARED_CLARO_FN_u7umyb.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PANEL_PARED_CLARO_FN_u7umyb.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '',
@@ -368,7 +367,7 @@ const productArray = [
     name: 'Revestimiento wall panel pared interior Wpc - Oscuro FN',
     description:
       'Ventajas: Anti- insectos, impermeable, no le afecta la humedad, no requiere mantención, etc. Nivel retardante de fuego: B1(nivel más alto en WPC exterior) Instalación: Instalar fácilmente, sin juntas visibles( sistema de clips o silicona) Economía: se trata de un material duradero y estético, al no tener mantenimiento, no requerirá de gastos adicionales, y representa un significativo ahorro de tiempo y dinero a largo plazo.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PANEL_PARED_OSCURO_FN_gtrfey.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PANEL_PARED_OSCURO_FN_gtrfey.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '',
@@ -384,7 +383,7 @@ const productArray = [
     name: 'Revestimiento wall panel pared interior Wpc - Oscuro FC',
     description:
       'Ventajas: Anti- insectos, impermeable, no le afecta la humedad, no requiere mantención, etc. Nivel retardante de fuego: B1(nivel más alto en WPC exterior) Instalación: Instalar fácilmente, sin juntas visibles( sistema de clips o silicona) Economía: se trata de un material duradero y estético, al no tener mantenimiento, no requerirá de gastos adicionales, y representa un significativo ahorro de tiempo y dinero a largo plazo.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PANEL_PARED_OSCURO_FC_yc2cek.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PANEL_PARED_OSCURO_FC_yc2cek.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '',
@@ -400,7 +399,7 @@ const productArray = [
     name: 'Revestimiento wall panel pared interior Wpc - Oscuro',
     description:
       'Ventajas: Anti- insectos, impermeable, no le afecta la humedad, no requiere mantención, etc. Nivel retardante de fuego: B1(nivel más alto en WPC exterior) Instalación: Instalar fácilmente, sin juntas visibles( sistema de clips o silicona) Economía: se trata de un material duradero y estético, al no tener mantenimiento, no requerirá de gastos adicionales, y representa un significativo ahorro de tiempo y dinero a largo plazo.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753559236/PANEL_PARED_OSCURO_obwo61.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753559236/PANEL_PARED_OSCURO_obwo61.jpg'],
     is_active: true,
     surface: 'Paredes',
     Box: '',
@@ -416,7 +415,7 @@ const productArray = [
     name: 'Piso flotante WPC encastrable',
     description:
       'Este panel combina la calidez del diseño en madera clara con vetas naturales y la modernidad de los bordes en negro. Fabricado en material resistente (PVC/WPC), es ideal para uso interior o exterior, aportando un acabado elegante y duradero. Compuesto resistente a la humedad, rayos UV y fácil de limpiar Instalación: Sistema de encastre sencillo y seguro Beneficios: Bajo mantenimiento, estética natural y alta durabilidad',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PISO_FLOTANTE_ENCASTRABLE_ojmg4p.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558116/PISO_FLOTANTE_ENCASTRABLE_ojmg4p.jpg'],
     is_active: true,
     surface: 'Revestimiento de paredes, cielorrasos, divisores y fachadas',
     Box: '',
@@ -432,7 +431,7 @@ const productArray = [
     name: 'Piso flotante WPC Extra Liviano',
     description:
       'Listón de diseño elegante con acabado madera natural, ideal para crear espacios cálidos y modernos. Fabricado en material compuesto de alta resistencia, soporta la humedad y el desgaste diario, siendo perfecto para interiores y exteriores. Apariencia realista de madera sin necesidad de mantenimiento Alta durabilidad y resistencia a golpes Instalación rápida y limpia',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PISO_FLOTANTE_EXTRA_LIVIANO_prdgtt.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1753558114/PISO_FLOTANTE_EXTRA_LIVIANO_prdgtt.jpg'],
     is_active: true,
     surface: 'Revestimientos de paredes, cielorrasos, fachadas, divisores y muebles decorativos',
     Box: '',
@@ -448,7 +447,7 @@ const productArray = [
     name: 'Collin Lux Mag',
     description:
       'Ambientes comerciales y residenciales interiores, con tráfico medio de personas, sin acceso a áreas externas y sin tránsito de equipos. Indicado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Mag_ifjeel.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Mag_ifjeel.jpg'],
     is_active: true,
     surface: 'Paredes y Pisos',
     Box: '2.16m2',
@@ -466,7 +465,7 @@ const productArray = [
   {
     name: 'Atlantis Decor',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: "https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657749/Atlantis_Decor_vr8e7r.jpg",
+    images: ["https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657749/Atlantis_Decor_vr8e7r.jpg"],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,36 m²',
@@ -484,7 +483,7 @@ const productArray = [
   {
     name: 'Berton Nero Lux Mag',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento..',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657750/Berton_Nero_Lux_Mag_cwh0lj.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657750/Berton_Nero_Lux_Mag_cwh0lj.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,16 m²',
@@ -503,7 +502,7 @@ const productArray = [
   {
     name: 'Calacata Ibiza Mag',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Calacata_Ibiza_Mag_bwm9xe.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Calacata_Ibiza_Mag_bwm9xe.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,16 m²',
@@ -522,7 +521,7 @@ const productArray = [
   {
     name: 'Calacata Ibiza Lux Mag ',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657749/Calacata_Ibiza_Ultra_Lux__nixjur.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657749/Calacata_Ibiza_Ultra_Lux__nixjur.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2.16m2',
@@ -540,7 +539,7 @@ const productArray = [
   {
     name: 'Collin Lux Mag',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Mag_ifjeel.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Mag_ifjeel.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2.16m2',
@@ -558,7 +557,7 @@ const productArray = [
   {
     name: 'Collin Lux Ultra',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Ultra_mfxpjy.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657755/Collin_Lux_Ultra_mfxpjy.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2.00m2',
@@ -576,7 +575,7 @@ const productArray = [
   {
     name: 'Marmol Allure Lux',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657754/Marmo_allure_lux_ck0ro6.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657754/Marmo_allure_lux_ck0ro6.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,81 m²',
@@ -594,7 +593,7 @@ const productArray = [
   {
     name: 'Marmol Venus',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Marmo_Venus_lkfo1l.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Marmo_Venus_lkfo1l.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: ' 2,52 m²',
@@ -610,7 +609,7 @@ const productArray = [
   {
     name: 'Marmol Gris Lux',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Marmol_gris_Lux_fmtfez.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Marmol_gris_Lux_fmtfez.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: ' 2,81 m² m²',
@@ -629,7 +628,7 @@ const productArray = [
   {
     name: 'Mont Blanc',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Montblanc_lqg4vv.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657753/Montblanc_lqg4vv.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,87 m²',
@@ -648,7 +647,7 @@ const productArray = [
   {
     name: 'Mont Blanc Pulido',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657754/Montblanc_Pulido_ic5k2o.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657754/Montblanc_Pulido_ic5k2o.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,81 m²',
@@ -667,7 +666,7 @@ const productArray = [
   {
     name: 'Ônix Cristallo Lux Ultra',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Cristallo_Lux_Ultra_ds2qgr.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Cristallo_Lux_Ultra_ds2qgr.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,00 m²',
@@ -683,7 +682,7 @@ const productArray = [
   {
     name: 'Ônix Ivory',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Ivory_fjgczp.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Ivory_fjgczp.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,52 m²',
@@ -699,7 +698,7 @@ const productArray = [
   {
     name: 'Ônix Perla Ultra',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Perla_Ultra_c3vhhh.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Onix_Perla_Ultra_c3vhhh.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,00 m²',
@@ -715,7 +714,7 @@ const productArray = [
   {
     name: 'Oregon Off White Lux',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Oregon_offwhite_lux_arhddb.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Oregon_offwhite_lux_arhddb.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,81 m²',
@@ -733,7 +732,7 @@ const productArray = [
   {
     name: 'Pettros Beige Out',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Pettros_Beige_Out_ebgkhk.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657752/Pettros_Beige_Out_ebgkhk.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,52 m²',
@@ -751,7 +750,7 @@ const productArray = [
   {
     name: 'Pettros Gray out',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Pettros_Gray_Out_sjukzo.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Pettros_Gray_Out_sjukzo.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,52 m²',
@@ -769,7 +768,7 @@ const productArray = [
   {
     name: 'Sevilha Decor',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Sevilha_Decor_ntejho.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Sevilha_Decor_ntejho.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,36 m²',
@@ -785,7 +784,7 @@ const productArray = [
   {
     name: 'Tiffany Mag Lux',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Tiffany_Mag_Lux_x0qlla.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657751/Tiffany_Mag_Lux_x0qlla.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,16 m²',
@@ -804,7 +803,7 @@ const productArray = [
   {
     name: 'Trento Gray Out',
     description: 'Ambientes residenciales y comerciales con alto tráfico de personas. Recomendado para lugares donde no se requiere resistencia al deslizamiento.',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657750/Trento_Gray_Out_af9uny.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1754657750/Trento_Gray_Out_af9uny.jpg'],
     is_active: true,
     surface: 'Pisos y Paredes',
     Box: '2,52 m²',
@@ -823,7 +822,7 @@ const productArray = [
   {
     name: 'SLH-S255',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180542/SLH-S255_qgrqhq.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180542/SLH-S255_qgrqhq.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -838,7 +837,7 @@ const productArray = [
   {
     name: 'SLH-S253',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180541/SLH-S253_jio3ix.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180541/SLH-S253_jio3ix.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -853,7 +852,7 @@ const productArray = [
   {
     name: 'SLH-S218-3',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-S218-3_tuxt6y.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-S218-3_tuxt6y.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -868,7 +867,7 @@ const productArray = [
   {
     name: 'SLH-S248',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180540/SLH-S248_cfhuiu.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180540/SLH-S248_cfhuiu.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -883,7 +882,7 @@ const productArray = [
   {
     name: 'SLH-S223',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S223_xwim0s.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S223_xwim0s.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -898,7 +897,7 @@ const productArray = [
   {
     name: 'SLH-S226',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S226_epcskz.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S226_epcskz.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -913,7 +912,7 @@ const productArray = [
   {
     name: 'SLH-S225',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S225_okptte.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S225_okptte.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -928,7 +927,7 @@ const productArray = [
   {
     name: 'SLH-S206L',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180527/SLH-S206L_lz6l0a.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180527/SLH-S206L_lz6l0a.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -943,7 +942,7 @@ const productArray = [
   {
     name: 'SLH-S250',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180541/SLH-S250_mbnxn9.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180541/SLH-S250_mbnxn9.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -958,7 +957,7 @@ const productArray = [
   {
     name: 'SLH-S205',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180540/SLH-S250._jbk5x2.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180540/SLH-S250._jbk5x2.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -973,7 +972,7 @@ const productArray = [
   {
     name: 'SLH-S249',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180540/SLH-S249_nefgs1.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180540/SLH-S249_nefgs1.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -988,7 +987,7 @@ const productArray = [
   {
     name: 'SLH-S221',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S221-L_pkjvir.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S221-L_pkjvir.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1003,7 +1002,7 @@ const productArray = [
   {
     name: 'SLH-S232',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180534/SLH-S232_zz8jhm.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180534/SLH-S232_zz8jhm.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1018,7 +1017,7 @@ const productArray = [
   {
     name: 'SLH-S233/3',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180534/SLH-S232-3._cnvucj.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180534/SLH-S232-3._cnvucj.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1033,7 +1032,7 @@ const productArray = [
   {
     name: 'SLH-S232/3',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180535/SLH-S232-3_n9l0it.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180535/SLH-S232-3_n9l0it.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1048,7 +1047,7 @@ const productArray = [
   {
     name: 'SLH-S222',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S222_x4xcum.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-S222_x4xcum.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1063,7 +1062,7 @@ const productArray = [
   {
     name: 'SLH-S220',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-S220_vjsm4u.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-S220_vjsm4u.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1078,7 +1077,7 @@ const productArray = [
   {
     name: 'SLH-S206',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180527/SLH-S206_si0htu.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180527/SLH-S206_si0htu.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1093,7 +1092,7 @@ const productArray = [
   {
     name: 'SLH-S218',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S218_kdugzp.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S218_kdugzp.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1108,7 +1107,7 @@ const productArray = [
   {
     name: 'SLH-S227',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180531/SLH-S227_agkd46.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180531/SLH-S227_agkd46.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1123,7 +1122,7 @@ const productArray = [
   {
     name: 'SLH-S239',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180536/SLH-S239_oe0iwj.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180536/SLH-S239_oe0iwj.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1138,7 +1137,7 @@ const productArray = [
   {
     name: 'SLH-S247',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180539/SLH-S247_mxzzxm.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180539/SLH-S247_mxzzxm.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1153,7 +1152,7 @@ const productArray = [
   {
     name: 'SLH-S237',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180536/SLH-S237_eoejsc.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180536/SLH-S237_eoejsc.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1168,7 +1167,7 @@ const productArray = [
   {
     name: 'SLH-S217',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S217_s4vvov.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S217_s4vvov.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1183,7 +1182,7 @@ const productArray = [
   {
     name: 'SLH-S212',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S212_hlddfx.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S212_hlddfx.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1198,7 +1197,7 @@ const productArray = [
   {
     name: 'SLH-S246',
     description: 'Sofá Cama',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180539/SLH-S246_y5qbkq.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180539/SLH-S246_y5qbkq.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1214,7 +1213,7 @@ const productArray = [
   {
     name: 'SLH-S246',
     description: 'Sofá Cama',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180539/SLH-S246._cwpo3a.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180539/SLH-S246._cwpo3a.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1229,7 +1228,7 @@ const productArray = [
   {
     name: 'SLH-S230',
     description: 'Sofá Cama',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180533/SLH-S230_hbq0kn.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180533/SLH-S230_hbq0kn.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1244,7 +1243,7 @@ const productArray = [
   {
     name: 'SLH-S230',
     description: 'Sofá Cama',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180532/SLH-S230._obcoo8.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180532/SLH-S230._obcoo8.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1259,7 +1258,7 @@ const productArray = [
   {
     name: 'SLH-M002',
     description: 'Colchón',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180526/SLH-M002_enwat6.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180526/SLH-M002_enwat6.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1275,7 +1274,7 @@ const productArray = [
   {
     name: 'SLH-M005',
     description: 'Colchón',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180526/SLH-M005_egp7q3.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180526/SLH-M005_egp7q3.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1290,7 +1289,7 @@ const productArray = [
   {
     name: 'SLH-M009',
     description: 'Colchón',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180526/SLH-M009_uq2bu8.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180526/SLH-M009_uq2bu8.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1305,7 +1304,7 @@ const productArray = [
   {
     name: 'SLH-M006',
     description: 'Colchón',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180527/SLH-M006_v1xufj.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180527/SLH-M006_v1xufj.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1320,7 +1319,7 @@ const productArray = [
   {
     name: 'SLH-M013',
     description: 'Colchón',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-M013_yljy0u.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-M013_yljy0u.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1335,7 +1334,7 @@ const productArray = [
   {
     name: 'SLH-M016',
     description: 'Colchón',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-M016_gyh1yx.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180530/SLH-M016_gyh1yx.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1350,7 +1349,7 @@ const productArray = [
   {
     name: 'SLH-S203',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180527/SLH-S203_jkxy4u.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180527/SLH-S203_jkxy4u.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1365,7 +1364,7 @@ const productArray = [
   {
     name: 'SLH-S251',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180541/SLH-S251_wh3a8g.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180541/SLH-S251_wh3a8g.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1380,7 +1379,7 @@ const productArray = [
   {
     name: 'SLH-S230-3',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180534/SLH-S230-3_kt9kgo.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180534/SLH-S230-3_kt9kgo.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1395,7 +1394,7 @@ const productArray = [
   {
     name: 'SLH-S230-1',
     description: 'Una Plaza',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180533/SLH-S230-1_etzvdn.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180533/SLH-S230-1_etzvdn.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1410,7 +1409,7 @@ const productArray = [
   {
     name: 'SLH-S230-3',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180534/SLH-S230-3._fqniae.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180534/SLH-S230-3._fqniae.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1425,7 +1424,7 @@ const productArray = [
   {
     name: 'SLH-S230-1',
     description: 'Una Plaza',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180533/SLH-S230-1._pgdgje.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180533/SLH-S230-1._pgdgje.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1440,7 +1439,7 @@ const productArray = [
   {
     name: 'SLH-S221',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-S221_pfdbpo.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-S221_pfdbpo.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1455,7 +1454,7 @@ const productArray = [
   {
     name: 'SLH-S210',
     description: 'Cuatro Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S210_bqtb5a.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S210_bqtb5a.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1470,7 +1469,7 @@ const productArray = [
   {
     name: 'SLH-S240',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180537/SLH-S240_bzcj9i.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180537/SLH-S240_bzcj9i.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1485,7 +1484,7 @@ const productArray = [
   {
     name: 'SLH-S238',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180536/SLH-S238_rz9r3k.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180536/SLH-S238_rz9r3k.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1500,7 +1499,7 @@ const productArray = [
   {
     name: 'SLH-S241-3',
     description: 'Tres Plazas',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180537/SLH-S241-3_gbljfn.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180537/SLH-S241-3_gbljfn.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1515,7 +1514,7 @@ const productArray = [
   {
     name: 'SLH-S219',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-S219_vfs0p6.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180529/SLH-S219_vfs0p6.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1530,7 +1529,7 @@ const productArray = [
   {
     name: 'SLH-S216',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S216_uqdhef.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S216_uqdhef.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1545,7 +1544,7 @@ const productArray = [
   {
     name: 'SLH-S229',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180532/SLH-S229_dthslj.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180532/SLH-S229_dthslj.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1560,7 +1559,7 @@ const productArray = [
   {
     name: 'SLH-S228',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180531/SLH-S228_apwk5a.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180531/SLH-S228_apwk5a.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1575,7 +1574,7 @@ const productArray = [
   {
     name: 'SLH-S211',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S211_e1fipz.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S211_e1fipz.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1590,7 +1589,7 @@ const productArray = [
   {
     name: 'SLH-S215',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S215_y2usv6.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180528/SLH-S215_y2usv6.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1605,7 +1604,7 @@ const productArray = [
   {
     name: 'SLH-S254',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180542/SLH-S254_txjuds.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180542/SLH-S254_txjuds.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1620,7 +1619,7 @@ const productArray = [
   {
     name: 'SLH-S243',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180538/SLH-S243_fnptkv.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180538/SLH-S243_fnptkv.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1635,7 +1634,7 @@ const productArray = [
   {
     name: 'SLH-S242',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180538/SLH-S242_y8p799.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180538/SLH-S242_y8p799.jpg'],
     is_active: true,
     surface: '',
     Box: '',
@@ -1650,7 +1649,7 @@ const productArray = [
   {
     name: 'SLH-S242',
     description: 'Sofá Silla',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180537/SLH-S242._im4czg.jpg',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755180537/SLH-S242._im4czg.jpg'],
     is_active: true,
     surface: '',
     Box: '',

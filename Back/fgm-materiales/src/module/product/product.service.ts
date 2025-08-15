@@ -63,7 +63,17 @@ export class ProductService {
         );
       }
 
-      const product = this.productRepository.create(productData);
+      // Asegurarse de que si viene 'img' o 'image' en el DTO, se mapee a 'images'
+      let data = { ...productData };
+      if ((productData as any).img) {
+        data.images = [(productData as any).img];
+        delete (data as any).img;
+      }
+      if ((productData as any).image) {
+        data.images = [(productData as any).image];
+        delete (data as any).image;
+      }
+      const product = this.productRepository.create(data);
 
       if (categoryIds && categoryIds.length > 0) {
         const categories = await this.categoryRepository.findBy({

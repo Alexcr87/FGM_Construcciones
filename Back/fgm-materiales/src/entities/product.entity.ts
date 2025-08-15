@@ -19,8 +19,8 @@ export class Product {
   @Column()
   description: string;
 
-  @Column()
-  img: string;
+  @Column('simple-array')
+  images: string[];
 
   @Column({ default: true })
   is_active: boolean;

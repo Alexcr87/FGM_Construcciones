@@ -30,9 +30,12 @@ export class createProductDto {
   })
   description: string;
 
-  @IsString()
+  @IsArray()
+  @ArrayNotEmpty()
+  @ArrayUnique()
+  @IsString({ each: true })
   @ApiProperty()
-  img: string;
+  images: string[];
 
   @IsString()
   @IsNotEmpty()
@@ -77,4 +80,4 @@ export class createProductDto {
   categoryIds: string[];
 }
 
-export class updateProductDto extends PartialType(createProductDto) {}
+export class updateProductDto extends PartialType(createProductDto) { }

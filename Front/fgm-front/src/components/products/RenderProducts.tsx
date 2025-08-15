@@ -13,7 +13,7 @@ interface Iprops {
 export const RenderProducts: React.FC<Iprops> = ({ categorias }) => {
 
 
-  const { name, img, id } = categorias
+  const { name, images, id } = categorias
 
   const router = useRouter()
 
@@ -24,7 +24,7 @@ export const RenderProducts: React.FC<Iprops> = ({ categorias }) => {
   return (
     <div className="relative h-80 md:h-[350px] w-full md:w-[350px] flex-1 rounded-lg overflow-hidden group shadow-md">
       <Image
-        src={img}
+        src={images?.[0] || '/assets/logo.png'}
         alt={name}
         width={350}
         height={350}

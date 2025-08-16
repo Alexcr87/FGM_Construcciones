@@ -17,17 +17,17 @@ export const RenderDetail: React.FC<IProps> = ({ products }) => {
   return (
     <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-4 flex flex-col w-full max-w-sm transition duration-300 hover:shadow-md">
       <Image
-        src={images?.[0] || '/assets/logo.png'}
+        src={images?.[0]}
         alt={name}
         width={300}
         height={144}
-        className={`w-full ${categories?.some((cat: { name: string }) => cat.name === "Sofá y Colchones") ? "object-contain max-h-32 mx-auto" : "h-36 object-cover"} rounded-lg mb-3`}
+        className={`w-full ${categories?.some((cat: { name: string }) => cat.name === "Sofá y Colchones" || cat.name === "Grifería") ? "object-contain max-h-32 mx-auto" : "h-36 object-cover"} rounded-lg mb-3`}
       />
       <h2 className="text-lg font-semibold text-gray-900 mb-1 truncate">{name}</h2>
       <p className="text-sm text-gray-600 mb-2 line-clamp-3">{description}</p>
       <div className="text-xs text-gray-500 mb-4">
         {box && box.trim() !== "" && <p>Caja: {box}</p>}
-        <p>Dimensiones: {dimension}</p>
+        {dimension && dimension.trim() !== "" && <p>Dimensiones: {dimension}</p>}
       </div>
       <div className="flex gap-2 mt-auto">
         <a

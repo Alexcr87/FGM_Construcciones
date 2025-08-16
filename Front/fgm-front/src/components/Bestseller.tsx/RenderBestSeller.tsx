@@ -21,7 +21,7 @@ export const RenderBestSeller: React.FC<IProducts> = ({ products }) => {
             {/* Contenedor de imagen - altura fija optimizada */}
             <div className="relative overflow-hidden" style={{ height: '220px' }}>
                 <Image
-                    src={images?.[0] || '/assets/logo.png'}
+                    src={images?.[0]}
                     alt={name}
                     width={350}
                     height={220}

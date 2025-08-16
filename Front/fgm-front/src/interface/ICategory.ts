@@ -4,7 +4,7 @@ export interface ICategory {
     id: string,
     name: string,
     description?: string,
-    images: string[],
+    img: string,
     products?: IProduct[]
 }
 

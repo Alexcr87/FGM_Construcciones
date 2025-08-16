@@ -18,12 +18,18 @@ export class FilesService {
     private readonly productRepository: Repository<Product>,
     @InjectRepository(Pdf)
     private readonly pdfRepository: Repository<Pdf>,
-  ) {}
+  ) { }
 
   async uploadFile(file: Express.Multer.File, id: string) {
     try {
       const url = await this.uploadFileToCloudinary(file.buffer, id);
-      await this.productRepository.update(id, { img: url });
+      // Obtener el producto actual para no sobrescribir imágenes existentes
+      const product = await this.productRepository.findOneBy({ id });
+      if (!product) {
+        throw new InternalServerErrorException('Producto no encontrado');
+      }
+      const images = Array.isArray(product.images) ? [...product.images, url] : [url];
+      await this.productRepository.update(id, { images });
       return { imgUrl: url };
     } catch (error) {
       throw new InternalServerErrorException(

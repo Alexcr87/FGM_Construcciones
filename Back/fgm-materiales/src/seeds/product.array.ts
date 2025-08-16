@@ -12,9 +12,6 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
     ],
   },
   {
@@ -31,9 +28,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -50,9 +45,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -69,9 +62,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -88,9 +79,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -107,9 +96,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -126,9 +113,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -145,9 +130,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -164,9 +147,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -183,9 +164,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -202,9 +181,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -221,9 +198,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -240,9 +215,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -259,9 +232,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -278,9 +249,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -297,6 +266,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc',
+      }
     ],
   },
   {
@@ -313,6 +285,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc',
+      }
     ],
   },
   {
@@ -329,6 +304,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc',
+      }
     ],
   },
   {
@@ -345,6 +323,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc',
+      }
     ],
   },
   {
@@ -361,6 +342,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc',
+      }
     ],
   },
   {
@@ -377,6 +361,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc',
+      }
     ],
   },
   {
@@ -393,6 +380,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc',
+      }
     ],
   },
   {
@@ -409,6 +399,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc',
+      }
     ],
   },
   {
@@ -425,6 +418,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc'
+      }
     ],
   },
   {
@@ -441,6 +437,9 @@ const productArray = [
       {
         name: 'Más Vendidos',
       },
+      {
+        name: 'Placas de Pvc'
+      }
     ],
   },
   {
@@ -457,9 +456,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -475,9 +472,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -494,9 +489,7 @@ const productArray = [
         name: 'Porcelanatos y Porcelanicos',
       },
 
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -513,9 +506,7 @@ const productArray = [
         name: 'Porcelanatos y Porcelanicos',
       },
 
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -531,9 +522,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -549,9 +538,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -567,9 +554,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -585,9 +570,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -620,9 +603,7 @@ const productArray = [
         name: 'Porcelanatos y Porcelanicos',
       },
 
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -639,9 +620,7 @@ const productArray = [
         name: 'Porcelanatos y Porcelanicos',
       },
 
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -658,9 +637,7 @@ const productArray = [
         name: 'Porcelanatos y Porcelanicos',
       },
 
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -724,9 +701,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -742,9 +717,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -760,9 +733,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
     ],
   },
   {
@@ -794,9 +765,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
 
     ],
   },
@@ -813,9 +782,7 @@ const productArray = [
       {
         name: 'Porcelanatos y Porcelanicos',
       },
-      {
-        name: 'Pisos y Revestimientos',
-      },
+
 
     ],
   },
@@ -1658,6 +1625,638 @@ const productArray = [
     categories: [
       {
         name: 'Sofá y Colchones',
+      }
+    ],
+  },
+  {
+    name: 'KL-5103N',
+    description: 'Grifo universal de silicona de 40mm con montaje ajustable',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277297/KL-5103N_rwfier.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277299/KL-5103N-4_cvhdq6.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277299/KL-5103N-3_vemqay.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277297/KL-5103N-1_vhzeat.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277299/KL-5103N-2_b1pvgg.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5102N',
+    description: 'Grifo universal de silicona de 40mm con montaje ajustable',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277296/KL-5102N_lfoume.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277296/KL-5102N-4_ip3atr.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277295/KL-5102N-1_ywpcit.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277296/KL-5102N-2_eqegr9.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277296/KL-5102N-3_f4g7dv.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5101W',
+    description: 'Rociador de cuatro funciones Grifo extraíble',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277292/KL-5101w_bo8e3g.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277293/KL-5101w-01_xk1uxd.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277293/KL-5101w-02_q6py3g.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277293/KL-5101w-03_not0eh.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277295/KL-5101w-05_ahjc6w.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277295/KL-5101w-04_my7ysl.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5128N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277270/KL-5128N_vgrsrl.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277271/KL-5128N-4_fjiizc.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277270/KL-5128N-1_tk7ba0.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277271/KL-5128N-2_ia5sb1.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277271/KL-5128N-3_d1yz7n.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5129N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277271/KL-5129N_ryntyb.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277271/KL-5129N-2_glc0ol.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277271/KL-5129N-1_uwdx3o.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5142N',
+    description: 'Color: Niquel Pulido, Negro Mate, Ceniza',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277275/KL-5142N-2_s8izsb.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277277/KL-5142N-3_lndzaa.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277275/KL-5142N-1_ap7uii.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-60',
+    description: 'Color: Niquel Pulido, Cromado, Oro Pulido, Negro Mate, Oro Rosa',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277288/KL-60_lnw3ma.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277288/KL-60-1_dmgv72.jpg', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277290/KL-60-2_gnc5no.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5104N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277299/KL-5104N_bq4aql.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5106N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277267/KL-5106N_lwlava.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5107N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277266/KL-5107N_jqkx4x.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5108N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277267/KL-5108N_efhflc.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5112N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277267/KL-5112N_iayeum.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5117N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277267/KL-5117N_hlxer1.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5122N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277268/KL-5122N_ezivih.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5125N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277268/KL-5125N_qi6ont.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5126N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277268/KL-5126N_mcv025.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5127',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277269/KL-5127_dk7h1z.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5130N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277272/KL-5130N_xlunoy.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5135N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277274/KL-5135N_n2jmsh.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5137N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277274/KL-5137N_zw738y.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5140N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277274/KL-5140N_yzwtwj.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5141N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277275/KL-5141N_rbzosc.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5152N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277277/KL-5152N_rfbvtk.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-5159',
+    description: 'Color: Oro Pulido, Ceniza, Negro Mate, Blanco',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277278/KL-5159G_wyarjv.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277277/KL-5159AG_df2ujv.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277278/KL-5159B_ax6zrw.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+
+  {
+    name: 'KL-52N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277287/KL-52N_zmltkw.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+
+  {
+    name: 'KL-53N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277287/KL-53N_xknspo.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-56N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277287/KL-56N_fo2exl.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-59N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277287/KL-59N_qxjx5v.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-84',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277291/KL-84_ykzrul.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-83',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277291/KL-83_ljrrjx.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-81',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277290/KL-81_ritlzb.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-82',
+    description: 'Color: Negro Mate',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277291/KL-82B_m50jow.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-9109',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277284/KL-9109_vksvvp.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-9106',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277284/KL-9106_afwy5f.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-9105',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277284/KL-9105_si3ugv.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-9102',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277284/KL-9102_iih0j7.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-8118',
+    description: 'Color: Cromado',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277283/KL-8118_gmknly.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-8116AG',
+    description: 'Color: Ceniza',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277283/KL-8116AG_us8fif.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-8110B',
+    description: 'Color: Negro Mate',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277282/KL-8110B_wztfw8.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-8108G-B',
+    description: 'Color: Negro Mate + Oro Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277281/KL-8108G_B_fyttgh.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-8107B',
+    description: 'Color: Negro Mate',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277281/KL-8107B_dcstde.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
+      }
+    ],
+  },
+  {
+    name: 'KL-8106N',
+    description: 'Color: Niquel Pulido',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755277280/KL-8106N_gqgkf5.jpg'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: 'Acero Inoxidable',
+    categories: [
+      {
+        name: 'Grifería',
       }
     ],
   },

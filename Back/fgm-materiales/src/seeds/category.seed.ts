@@ -7,8 +7,8 @@ const categories = [
     img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751382544/Dise%C3%B1o_Interior_pta4s3.jpg',
   },
   {
-    name: 'Pisos y Revestimientos',
-    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1751382544/Pisos_y_Revestimientos_xws9g9.jpg',
+    name: 'Grifería',
+    img: 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755352911/Grifer%C3%ADa_atzjjm.jpg',
   },
   {
     name: 'Porcelanatos y Porcelanicos',

@@ -2260,6 +2260,60 @@ const productArray = [
       }
     ],
   },
+  {
+    name: 'CT-9920',
+    description: 'Florence Rimless',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755642087/CT9920_shjnsw.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755642087/CT9920-01_xyi0z0.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: '',
+    categories: [
+      {
+        name: 'Baños y Sanitarios',
+      },
+      {
+        name: 'Más Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'LS-9916B',
+    description: 'Serenity',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755642089/LS9916B_lkvhgy.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755642087/LS9916B-01_fjqewq.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: '',
+    categories: [
+      {
+        name: 'Baños y Sanitarios',
+      },
+      {
+        name: 'Más Vendidos',
+      },
+    ],
+  },
+  {
+    name: 'LS-9916B',
+    description: 'Serenity',
+    images: ['https://res.cloudinary.com/dhsujm9s7/image/upload/v1755642088/LS9916A_h3ust0.png', 'https://res.cloudinary.com/dhsujm9s7/image/upload/v1755642087/LS9916A-01_xmufad.png'],
+    is_active: true,
+    surface: '',
+    Box: '',
+    dimension: '',
+    material: '',
+    categories: [
+      {
+        name: 'Baños y Sanitarios',
+      },
+      {
+        name: 'Más Vendidos',
+      },
+    ],
+  },
 ];
 
 export default productArray;

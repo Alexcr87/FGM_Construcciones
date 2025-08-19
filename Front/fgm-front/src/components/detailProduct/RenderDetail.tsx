@@ -21,7 +21,7 @@ export const RenderDetail: React.FC<IProps> = ({ products }) => {
         alt={name}
         width={300}
         height={144}
-        className={`w-full ${categories?.some((cat: { name: string }) => cat.name === "Sofá y Colchones" || cat.name === "Grifería") ? "object-contain max-h-32 mx-auto" : "h-36 object-cover"} rounded-lg mb-3`}
+        className={`w-full ${categories?.some((cat: { name: string }) => cat.name === "Sofá y Colchones" || cat.name === "Grifería" || cat.name === "Baños y Sanitarios") ? "object-contain max-h-32 mx-auto" : "h-36 object-cover"} rounded-lg mb-3`}
       />
       <h2 className="text-lg font-semibold text-gray-900 mb-1 truncate">{name}</h2>
       <p className="text-sm text-gray-600 mb-2 line-clamp-3">{description}</p>

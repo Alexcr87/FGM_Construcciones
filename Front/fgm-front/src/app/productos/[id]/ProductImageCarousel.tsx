@@ -10,8 +10,8 @@ interface ProductImageCarouselProps {
 }
 
 
-export default function ProductImageCarousel({ images, alt, categories }: ProductImageCarouselProps) {
-    console.log('CATEGORIAS EN CARRUSEL:', categories);
+export default function ProductImageCarousel({ images, alt }: ProductImageCarouselProps) {
+
     const [current, setCurrent] = useState(0);
     const imgs = images && images.length > 0 ? images : ["/assets/logo.png"];
 

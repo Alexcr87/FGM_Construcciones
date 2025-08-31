@@ -30,7 +30,6 @@ export default function ProductImageCarousel({ images, alt }: ProductImageCarous
                     aria-label="Anterior"
                     style={{ top: "50%", transform: "translateY(-50%)" }}
                 >
-                    {/* Flecha izquierda SVG elegante */}
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#374151" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-left">
                         <polyline points="15 18 9 12 15 6" />
                     </svg>
@@ -50,7 +49,6 @@ export default function ProductImageCarousel({ images, alt }: ProductImageCarous
                     aria-label="Siguiente"
                     style={{ top: "50%", transform: "translateY(-50%)" }}
                 >
-                    {/* Flecha derecha SVG elegante */}
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#374151" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-right">
                         <polyline points="9 18 15 12 9 6" />
                     </svg>

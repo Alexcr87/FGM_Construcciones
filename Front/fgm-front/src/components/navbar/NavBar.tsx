@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { IoSearchSharp } from "react-icons/io5";
@@ -6,6 +7,7 @@ import Image from "next/image";
 import { ICategory, IProduct } from "@/interface/ICategory";
 import { useState } from "react";
 import { ProductSearchCard } from "@/components/productSearchCard/ProductSearchCard";
+import { productArray } from "@/helper/productos.seed";
 
 interface ICategorias {
   categorias: ICategory[]
@@ -19,21 +21,25 @@ export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
   const [loading, setLoading] = useState(false);
   const [showResults, setShowResults] = useState(false);
 
-  // Buscar productos en el backend
-  const handleSearch = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearch(value);
     setShowResults(true);
 
     if (value.length > 1) {
       setLoading(true);
-      try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BACK_URL}/product?search=${encodeURIComponent(value)}`);
-        const data = await res.json();
-        setResults(data);
-      } catch {
-        setResults([]);
-      }
+      const filtered = productArray.filter((p) => {
+        const nameMatch = p.name.toLowerCase().includes(value.toLowerCase());
+        const descMatch = p.description.toLowerCase().includes(value.toLowerCase());
+        const categoryMatch = Array.isArray(p.categories)
+          ? p.categories.some((cat) => cat.name.toLowerCase().includes(value.toLowerCase()))
+          : false;
+        return nameMatch || descMatch || categoryMatch;
+      }).map((p) => ({
+        ...p,
+        box: (p as any).box ?? (p as any).Box ?? "",
+      }));
+      setResults(filtered);
       setLoading(false);
     } else {
       setResults([]);
@@ -79,24 +85,22 @@ export const Navbar: React.FC<ICategorias> = ({ categorias }) => {
             </div>
           )}
         </div>
-        {/* Eliminado el botón hamburguesa en mobile */}
       </div>
-      {/* Fila de categorías debajo del navbar principal */}
       {isDesktopDropdownOpen && (
         <div className="w-full flex justify-center gap-4 py-2 bg-white border-b border-gray-200">
           {categorias.map(cat => (
             <Link
               key={cat.id}
               href={`/categorias/${cat.id}`}
-              className="px-5 py-2 rounded-full bg-gray-100 text-gray-800 font-medium shadow hover:bg-gray-200 transition-all"
-              style={{ border: 'none', minWidth: '120px', textAlign: 'center' }}
+              className="px-5 py-2 rounded-full bg-gray-100 text-gray-800 font-medium shadow hover:bg-gray-200 transition-all flex items-center justify-center"
+              style={{ border: 'none', minWidth: '120px', textAlign: 'center', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             >
-              {cat.name.toUpperCase()}
+              <span className="w-full text-center flex items-center justify-center">{cat.name.toUpperCase()}</span>
             </Link>
           ))}
         </div>
       )}
-      {/* Responsive navbar: enlaces horizontales y barra de búsqueda debajo */}
+      {/* Responsive navbar*/}
       <div className="md:hidden w-full bg-white border-t border-gray-200 flex flex-col items-center">
         <div className="flex flex-wrap justify-center gap-2 py-1 w-full">
           <Link href="/" className="px-2 py-1 text-gray-700 font-medium text-xs">INICIO</Link>

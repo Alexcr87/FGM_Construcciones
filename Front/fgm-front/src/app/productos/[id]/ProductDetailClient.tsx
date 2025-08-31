@@ -12,10 +12,8 @@ export default function ProductDetailClient({ producto, isBestseller, whatsappUr
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-50">
             <div className="bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col p-4 sm:p-8 lg:p-12 gap-8 w-full max-w-4xl min-h-[400px] mx-auto">
-                {/* Título arriba centrado */}
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 text-center w-full">{producto.name}</h1>
                 <div className="flex flex-col lg:flex-row gap-8 w-full">
-                    {/* Imagen a la izquierda (más grande) */}
                     <div className="relative flex-shrink-0 flex flex-col items-center justify-center w-full lg:w-2/3">
                         <ProductImageCarousel images={producto.images} alt={`Imagen de ${producto.name} - ${producto.material}, dimensiones ${producto.dimension}`} />
                         {isBestseller && (
@@ -24,7 +22,6 @@ export default function ProductDetailClient({ producto, isBestseller, whatsappUr
                             </span>
                         )}
                     </div>
-                    {/* Descripción y detalles a la derecha (más pequeño) */}
                     <div className="flex flex-col justify-between flex-grow w-full lg:w-1/3 mt-6 lg:mt-0">
                         <p className="text-gray-700 text-base sm:text-lg mb-4 text-left whitespace-pre-line leading-relaxed">{producto.description}</p>
                         <div className="flex flex-col text-sm sm:text-base text-gray-500 mb-4">

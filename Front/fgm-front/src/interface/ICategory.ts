@@ -20,5 +20,5 @@ export interface IProduct {
     box: string,
     is_active?: boolean,
     creation?: Date,
-    categories?: ICategory[]
+    categories?: { name: string }[];
 }

@@ -19,9 +19,16 @@ export const Products: React.FC<Props> = ({ categorias }) => {
         Renová tus Espacios al Mejor Precio
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full justify-items-center">
-        {categorias.map((categoria) => (
-          <RenderProducts categorias={categoria} key={categoria.id} />
-        ))}
+        {categorias.map((categoria, idx) => {
+          if (idx === 6) {
+            return (
+              <div key={categoria.id} className="col-span-full flex justify-center">
+                <RenderProducts categorias={categoria} />
+              </div>
+            );
+          }
+          return <RenderProducts categorias={categoria} key={categoria.id} />;
+        })}
       </div>
     </div>
   );

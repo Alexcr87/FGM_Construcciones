@@ -65,7 +65,6 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
 
     return (
         <div className="w-full max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 py-8">
-            {/* Título de la sección */}
             <div className="text-center mb-8">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2">
                     Productos Destacados
@@ -75,9 +74,7 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                 </p>
             </div>
 
-            {/* Contenedor del slider */}
             <div className="relative w-full flex items-center justify-center">
-                {/* Botón anterior siempre visible en mobile */}
                 <button
                     onClick={prevSlide}
                     className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-gray-200"
@@ -88,7 +85,6 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                     </svg>
                 </button>
 
-                {/* Contenedor de productos */}
                 <div className="overflow-visible px-2 sm:px-12 lg:px-20 w-full">
                     <div className="flex flex-row transition-transform duration-500 ease-in-out gap-4 items-stretch justify-center">
                         {currentProducts.map((product: IProduct) => (
@@ -103,7 +99,6 @@ export const BestSeller: React.FC<IProps> = ({ products }) => {
                     </div>
                 </div>
 
-                {/* Botón siguiente siempre visible en mobile */}
                 <button
                     onClick={nextSlide}
                     className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-gray-200"

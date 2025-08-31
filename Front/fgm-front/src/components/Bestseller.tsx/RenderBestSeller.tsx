@@ -18,7 +18,6 @@ export const RenderBestSeller: React.FC<IProducts> = ({ products }) => {
 
     return (
         <div className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden transform hover:-translate-y-1 border border-gray-200 h-full flex flex-col">
-            {/* Contenedor de imagen - altura fija optimizada */}
             <div className="relative overflow-hidden" style={{ height: '220px' }}>
                 <Image
                     src={images?.[0]}
@@ -31,7 +30,6 @@ export const RenderBestSeller: React.FC<IProducts> = ({ products }) => {
                         target.src = '/assets/logo.png';
                     }}
                 />
-
                 {/* Badge de bestseller */}
                 <div className="absolute top-2 right-2">
                     <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
@@ -40,7 +38,6 @@ export const RenderBestSeller: React.FC<IProducts> = ({ products }) => {
                 </div>
             </div>
 
-            {/* Contenido de la tarjeta - flex-grow para ocupar el espacio restante */}
             <div className="p-3 flex flex-col flex-grow">
                 <h3 className="font-semibold text-gray-800 text-sm mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors duration-300">
                     {name}
@@ -52,12 +49,10 @@ export const RenderBestSeller: React.FC<IProducts> = ({ products }) => {
                     </p>
                 )}
 
-                {/* Información adicional sin iconos */}
                 <div className="flex flex-col text-xs text-gray-500 mb-3 space-y-1">
                     <span className="truncate">{material}</span>
                 </div>
 
-                {/* Botón de WhatsApp - siempre al final */}
                 <button
                     onClick={handleWhatsAppClick}
                     className="w-full flex items-center justify-center gap-2 text-xs py-2 border border-green-600 rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors duration-300 mt-auto"

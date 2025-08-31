@@ -27,6 +27,8 @@ const pdfs = [
     },
 ];
 
+
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function CatalogosPage() {
@@ -51,9 +53,11 @@ export default function CatalogosPage() {
                     >
                         <div className="w-full flex justify-center">
                             {isMobile ? (
-                                <img
+                                <Image
                                     src={pdf.portada}
                                     alt={`Portada de ${pdf.name}`}
+                                    width={220}
+                                    height={160}
                                     className="mb-4 border rounded w-full max-w-[220px] h-[160px] object-cover"
                                 />
                             ) : (
